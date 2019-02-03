@@ -1,0 +1,136 @@
+## Balance of trade
+
+The total of all the money coming into a country from abroad less all of the money going out of the country during the same period. This is usually broken down into the current account and the capital account. 
+
+The current account includes:
+
+- Visible trade (known as merchandise trade in the United States), which is the value of exports and imports of physical goods;
+- Invisible trade, which is receipts and payments for services, such as banking or advertising, and other intangible goods, such as copyrights, as well as cross-border dividend and interest payments;
+- Private transfers, such as money sent home by expatriate workers;
+- Official transfers, such as international aid. 
+
+The capital account includes:
+
+- Long-term capital flows, such as money invested in foreign firms, and profits made by selling those investments and bringing the money home;
+- Short-term capital flows, such as money invested in foreign currencies by international speculators, and funds moved around the world for business purposes by multinational companies. These short-term flows can lead to sharp movements in exchange rates, which bear little relation to what currencies should be worth judging by fundamental measures of value such as purchasing power parity.
+
+As bills must be paid, ultimately a country’s accounts must balance (although because real life is never that neat a balancing item is usually inserted to cover up the inconsistencies). “Balance of payments crisis” is a politically charged phrase. But a country can often sustain a current account deficit for many years without its economy suffering, because any deficit is likely to be tiny compared with the country’s national income and wealth. Indeed, if the deficit is caused by firms importing technology and other capital goods from abroad, which will improve their productivity, the economy may benefit. A deficit that has to be financed by the public sector may be more problematic, particularly if the public sector faces limits on how much it can raise taxes or borrow or has few financial reserves. For instance, when the Russian government failed to pay the interest on its foreign debt in August 1998 it found it impossible to borrow any more money in the international financial markets. Nor was it able to increase taxes in its collapsing economy or to find anybody within Russia willing to lend it money. That truly was a balance of payments crisis.
+
+In the early years of the 21st century, economists started to worry that the United States would find itself in a balance of payments crisis. Its current account deficit grew to over 5% of its GDP, making its economy increasingly reliant on foreign credit.
+
+## Free trade
+
+The ability of people to undertake economic transactions with people in other countries free from any restraints imposed by governments or other regulators. Measured by the volume of imports and exports, world trade has become increasingly free in the years since the second world war. A fall in barriers to trade, as a result of the general agreement on tariffs and trade and its successor, the world trade organisation, has helped stimulate this growth. The volume of world merchandise trade at the start of the 21st century was about 17 times what it was in 1950, and the world’s total output was not even six times as big. The ratio of world exports to GDP had more than doubled since 1950. Of this, trade in manufactured goods was worth three times the value of trade in services, although the share of services trade was growing fast.
+
+For economists, the benefits of free trade are explained by the theory of comparative advantage, with each country doing those things in which it is comparatively more efficient. As long as each country specialises in products in which it has a comparative advantage, trade will be mutually beneficial. Some critics of free trade argue that trade with developing countries, where wages are usually lower and working hours longer than in developed countries, is unfair and will wipe out jobs in high-wage countries. They want autarky or fair trade.
+
+Real-world trade patterns sometimes seem to challenge the theory of comparative advantage. Most trade occurs between countries that do not have huge cost differences. The biggest trading partner of the United States, for instance, is Canada. Well over half the exports from France, Germany and Italy go to other european union countries. Moreover, these countries sell similar things to each other: cars made in France are exported to Germany, and German cars go to France. The main reason seems to be cross-border differences in consumer tastes. But the agricultural exports of Australia, say, or Saudi Arabia’s reliance on oil, do clearly stem from their particular stock of natural resources. Also poorer countries often have more unskilled labour, so they export simple manufactures such as clothing.
+
+## Factors of production
+
+**Capital**
+
+Money or assets put to economic use, the life-blood of capitalism. Economists describe capital as one of the four essential ingredients of economic activity, the factors of production, along with land, labour and enterprise. Production processes that use a lot of capital relative to labour are capital intensive; those that use comparatively little capital are labour intensive. Capital takes different forms. A firm’s assets are known as its capital, which may include fixed capital (machinery, buildings, and so on) and working capital (stocks of raw materials and part-finished products, as well as money, that are used up quickly in the production process). Financial capital includes money, bonds and shares. human capital is the economic wealth or potential contained in a person, some of it endowed at birth, the rest the product of training and education, if only in the university of life. The invisible glue of relationships and institutions that holds an economy together is its social capital.
+
+**Land**
+
+One of the factors of production, along with labour, capital and enterprise. Pending colonisation of the moon, it is in fairly fixed supply. Marginal increases are possible by reclaiming land from the sea and cutting down forests (which may impose large economic costs by damaging the environment), but the expansion of deserts may slightly reduce the amount of usable land. Owners earn money from land by charging rent.
+
+**Labor**
+
+One of the factors of production, with land, capital and enterprise. Among the things that determine the supply of labour are the number of able people in the population, their willingness to work, labour laws and regulations, and the health of the economy and firms. demand for labour is also affected by the health of the economy and firms, labour laws and regulations, as well as the price and supply of other factors of production.
+
+In a perfect market, wages (the price of labour) would be determined by supply and demand. But the labour market is often far from perfect. Wages can be less flexible than other prices; in particular, they rarely fall even when demand for labour declines or supply increases. This wage rigidity can be a cause of unemployment.
+
+**Enterprise**
+
+An entrepreneur is somebody who has the idea and enterprise to mix together the other factors of production to produce something valuable. An entrepreneur must be willing to take a risk in pursuit of a profit.
+
+## Commodity
+
+A comparatively homogeneous product that can typically be bought in bulk. It usually refers to a raw material – oil, cotton, cocoa, silver – but can also describe a manufactured product used to make other things, for example, microchips used in personal computers. Commodities are often traded on commodity exchanges. On average, the price of natural commodities has fallen steadily in real terms in defiance of some predictions that growing consumption of non-renewables such as copper would force prices up. At times the oil price has risen sharply in real terms, most notably during the 1970s, but this was caused not by the exhaustion of limited supplies but by rationing by the opec cartel, or war, or fear of it, particularly in the oil-rich Middle East.
+
+
+## Market
+
+**Competition**
+
+The more competition there is, the more likely are firms to be efficient and prices to be low. Economists have identified several different sorts of competition. Perfect competition is the most competitive market imaginable in which everybody is a price taker. Firms earn only normal profits, the bare minimum profit necessary to keep them in business. If firms earn more than this (excess profits), other firms will enter the market and drive the price level down until there are only normal profits to be made. Most markets exhibit some form of imperfect or monopolistic competition. There are fewer firms than in a perfectly competitive market and each can to some degree create barriers to entry. So firms can earn some excess profits without a new entrant being able to compete to bring prices down. The least competitive market is a monopoly, dominated by a single firm that can earn substantial excess profits by controlling either the amount of output in the market or the price (but not both). In this sense it is a price setter. When there are few firms in a market (oligopoly), they have the opportunity to behave as a monopolist through some form of collusion (see cartel). A market dominated by a single firm does not necessarily have monopoly power if it is a contestable market. In such a market, a single firm can dominate only if it produces as efficiently as possible and does not earn excess profits. If it becomes inefficient or earns excess profits, another more efficient or less profitable firm will enter the market and dominate it instead.
+
+1. Perfect competition
+
+The most competitive market imaginable. Perfect competition is rare and may not even exist. It is so competitive that any individual buyer or seller has a negligible impact on the market price. Products are homogeneous. information is perfect. Everybody is a price taker. firms earn only normal profit, the bare minimum profit necessary to keep them in business. If firms earn more than that (excess profits), the absence of barriers to entry means that other firms will enter the market and drive the price level down until there are only normal profits to be made. Output will be maximised and price minimised. Contrast with monopolistic competition, oligopoly and, above all, monopoly.
+
+2. Monopolistic competition
+
+Somewhere between perfect competition and monopoly, also known as imperfect competition. It describes many real-world markets. Perfectly competitive markets are extremely rare, and few firms enjoy a pure monopoly; oligopoly is more common. In monopolistic competition, there are fewer firms than in a perfectly competitive market and each can differentiate its products from the rest somewhat, perhaps by advertising or through small differences in design. These small differences form barriers to entry. As a result, firms can earn some excess profits, although not as much as a pure monopoly, without a new entrant being able to reduce prices through competition. Prices are higher and output lower than under perfect competition.
+
+- Barriers to entry (or exit)
+	- How firms keep out competition – an important source of incumbent advantage. There are four main categories of barriers. They are:
+
+	- 1. A firm may own a crucial resource, such as an oil well, or it may have an exclusive operating licence, for instance, to broadcast on a particular radio wavelength.
+	- 2. A big firm with economies of scale may have a significant competitive advantage because it can produce a large output at lower costs than can a smaller potential rival.
+	- 3. An incumbent firm may make it hard for a would-be entrant by incurring huge sunk costs, spending lots of money on things such as advertising, which any rival must match to compete effectively but which have no value if the attempt to compete should fail.
+	- 4. Powerful firms can discourage entry by raising exit costs, for example, by making it an industry norm to hire workers on long-term contracts, which make firing an expensive process.
+
+3. Monopoly
+
+When the production of a good or service with no close substitutes is carried out by a single firm with the market power to decide the price of its output. Contrast with perfect competition, in which no single firm can affect the price of what it produces. Typically, a monopoly will produce less, at a higher price, than would be the case for the entire market under perfect competition. It decides its price by calculating the quantity of output at which its marginal revenue would equal its marginal cost, and then sets whatever price would enable it to sell exactly that quantity.
+
+In practice, few monopolies are absolute, and their power to set prices or limit supply is constrained by some actual or potential near-competitors (see monopolistic competition). An extreme case of this occurs when a single firm dominates a market but has no pricing power because it is in a contestable market; that is, if it does not operate efficiently, a more efficient rival firm will take its entire market away. Antitrust policy can curb monopoly power by encouraging competition or, when there is a natural monopoly and thus competition would be inefficient, through regulation of prices. Furthermore, the mere possibility of antitrust action may encourage a monopoly to self-regulate its behaviour, simply to avoid the trouble an investigation would bring.
+
+4. Oligopoly
+When a few firms dominate a market. Often they can together behave as if they were a single monopoly, perhaps by forming a cartel. Or they may collude informally, by preferring gentle non-price competition to a bloody price war. Because what one firm can do depends on what the other firms do, the behaviour of oligopolists is hard to predict. When they do compete on price, they may produce as much and charge as little as if they were in a market with perfect competition.
+
+
+**Monopsony**
+
+A market dominated by a single buyer. A monopsonist has the market power to set the price of whatever it is buying (from raw materials to labour). Under perfect competition, by contrast, no individual buyer is big enough to affect the market price of anything.
+
+## Diminishing returns
+
+The more you have, the smaller is the extra benefit you get from having even more; also known as diseconomies of scale (see economies of scale). For instance, when workers have a lot of capital giving them a little more may not increase their productivity anywhere near as much as would giving the same amount to workers who currently have little or no capital. This underpins the catch-up effect, whereby there is (supposedly) convergence between the rates of growth of developing countries and developed ones. In the new economy, some economists argue, capital may not suffer from diminishing returns, or at least the amount of diminishing will be much smaller. There may even be ever increasing returns.
+
+## Diversification
+
+Not putting all your eggs in one basket. Investors are encouraged to do this by modern portfolio theory, as holding several different shares and other assets helps to reduce risk. At the sharp end of business, however, diversification is somewhat out of fashion. Economic studies of diversifying corporate mergers have found that these often hurt the shareholders of the acquiring firm; by contrast, diversified firms that have sold off non-core businesses have typically made their shareholders much better off.
+
+## Equilibrium
+
+When supply and demand are in balance. At the equilibrium price, the quantity that buyers are willing to buy exactly matches the quantity that sellers are willing to sell. So everybody is satisfied, unlike when there is disequilibrium. In classical economics, it is assumed that markets always tend towards equilibrium and return to it in the event that something causes a temporary disequilibrium. general equilibrium is when supply and demand are balanced simultaneously in all the markets in an economy. keynes questioned whether the economy always moved to equilibrium, for instance, to ensure full employment.
+
+## GDP
+
+Gross domestic product, a measure of economic activity in a country. It is calculated by adding the total value of a country’s annual output of goods and services. GDP = private consumption + investment + public spending + the change in inventories + (exports − imports). It is usually valued at market prices; by subtracting indirect tax and adding any government subsidy, however, GDP can be calculated at factor cost. This measure more accurately reveals the income paid to factors of production. Adding income earned by domestic residents from their investments abroad, and subtracting income paid from the country to investors abroad, gives the country’s gross national product (GNP). 
+
+The effect of inflation can be eliminated by measuring GDP growth in constant real prices. However, some economists argue that hitting a nominal GDP target should be the main goal of macroeconomic policy. This is because it would remind policymakers to take into account the effect of their decisions on inflation, as well as on growth. 
+
+GDP can be calculated in three ways. The income method adds the income of residents (individuals and firms) derived from the production of goods and services. The output method adds the value of output from the different sectors of the economy. The expenditure method totals spending on goods and services produced by residents, before allowing for depreciation and capital consumption. As one person’s output is another person’s income, which in turn becomes expenditure, these three measures ought to be identical. They rarely are because of statistical imperfections. Furthermore, the output and income measures exclude unreported economic activity that takes place in the black economy but that may be captured by the expenditure measure.
+
+GDP is disliked as an objective of economic policy by some because it is not a perfect measure of welfare. It does not include aspects of the good life such as some leisure activities. Nor does it include economically valuable activities that are not paid for, such as parents teaching their children to read. But it does include some things that lower the quality of life, such as activities that damage the environment.
+
+## Marginal concept
+
+The difference made by one extra unit of something. Marginal revenue is the extra revenue earned by selling one more unit of something. The marginal price is how much extra a consumer must pay to buy one extra unit. Marginal utility is how much extra utility a person gets from consuming (or doing) an extra unit of something. The marginal product of labour is how much extra output a firm would get by employing an extra worker, or by getting an existing worker to put in an extra hour on the job. The marginal propensity to consume (or to save) measures by how much a household’s consumption (savings) would increase if its income rose by, say, $1. The marginal tax rate measures how much extra tax you would have to pay if you earned an extra dollar. The marginal cost (or whatever) can be very different from the average cost (or whatever), which simply divides total costs (or whatever) by the total number of units produced (or whatever). A common finding in microeconomics is that small incremental changes can matter enormously. In general, thinking “at the margin” often leads to better economic decision-making than thinking about the averages. Alfred marshall, the father of neo-classical economics, based many of his theories of economic behaviour on marginal rather than average behaviour. For instance, givencertain plausible assumptions, a profit-maximising firm will increase production up to the point where marginal revenue equals marginal cost. This is because if marginal revenue exceeded marginal cost, the firm could increase its profit by producing an extra unit of output. Alternatively, if marginal cost exceeded marginal revenue, the firm could increase its profit by producing fewer units of output. In all walks of life, a basic rule of rational economic decision-making is: do something only if the marginal utility you get from it exceeds the marginal cost of doing it.
+
+## Price
+
+In equilibrium, what balances supply and demand. The price charged for something depends on the tastes, income and elasticity of demand of customers. It depends on the amount of competition in the market. Under perfect competition, all firms are price takers. Where there is a monopoly, or firms have some market power, the seller has some control over the price, which will probably be higher than in a perfectly competitive market. By how much more will depend on how much market power there is, and on whether the firm(s) with the market power are committed to profit maximisation. In some cases, firms may charge less than the profit-maximising price for strategic or other reasons (called predatory pricing).
+
+## Productivity
+
+The relationship between inputs and output, which can be applied to individual factors of production or collectively. Labour productivity is the most widely used measure and is usually calculated by dividing total output by the number of workers or the number of hours worked. Total factor productivity attempts to measure the overall productivity of the inputs used by a firm or a country.
+
+Alas, the usefulness of productivity statistics is questionable. The quality of different inputs can change significantly over time. There can also be significant differences in the mix of inputs. Furthermore, firms and countries may use different definitions of their inputs, especially capital. That said, much of the difference in countries’ living standards reflects differences in their productivity. Usually, the higher their productivity is the better, but this is not always so. In the UK during the 1980s, labour productivity rose sharply, leading some economists to talk of a “productivity miracle”. Others disagreed, saying that productivity had risen because unemployment had risen – in other words, the least productive workers had been removed from the figures on which the average was calculated.
+
+There was a similar debate in the United States starting in the late 1990s. Initially, economists doubted that a productivity miracle was taking place. But by 2003, they conceded that during the previous five years the United States enjoyed the fastest productivity growth in any such period since the second world war. Over the whole period from 1995, labour productivity growth averaged almost 3% a year, twice the average rate over the previous two decades. That did not stop economists debating why the miracle had occurred.
+
+## Yield
+
+The annual income from a security, expressed as a percentage of the current market price of the security. The yield on a share is its dividend divided by its price. A bond yield is also known as its interest rate: the annual coupon divided by the market price.
+
+Yield curve is a shorthand for comparisons of the interest rate on government bonds of different maturity. If investors think it is riskier to buy a bond with 15 years until it matures than a bond with five years of life, they will demand a higher interest rate (yield) on the longer-dated bond. If so, the yield curve will slope upwards from left (the shorter maturities) to right. It is normal for the yield curve to be positive (upward sloping, left to right) simply because investors normally demand compensation for the added risk of holding longer-term securities. Historically, a downward-sloping (or inverted) yield curve has been an indicator of recession on the horizon, or, at least, that investors expect the central bank to cut short-term interest rates in the near future. A flat yield curve means that investors are indifferent to maturity risk, but this is unusual. When the yield curve as a whole moves higher, it means that investors are more worried that inflation will rise for the foreseeable future and therefore that higher interest rates will be needed. When the whole curve moves lower, it means that investors have a rosier inflationary outlook.
+
+Even if the direction (up or down) of a yield curve is unchanged, useful information can be gleaned from changes in the spreads between yields on bonds of different maturities and on different sorts of bonds with the same maturity (such as government bonds versus corporate bonds, or thinly traded bonds versus highly liquid bonds).
+
+Comparing the performance of bonds and shares is done through **yield gap**. The gap is defined as the average yield on equities minus the average yield on bonds. Because shares are usually riskier investments than bonds, you might expect them to have a higher yield. In practice, the yield gap is often negative, with bonds yielding more than equities. This is not because investors regard equities as safer than bonds (see equity risk premium). Rather, it is that they expect most of the benefit from buying shares to come from an increase in their price (capital appreciation) rather than from dividend payments. Bond investors usually expect more of their gains to come from coupon payments. They also worry that inflation will erode the real value of future coupons, making them value current payments more highly than those due in years to come. Moreover, the usefulness of the dividend yield as a guide to the performance of shares has declined since the early 1990s, as increasingly companies have chosen to return cash to shareholders by buying back their own shares rather than paying out bigger dividends.

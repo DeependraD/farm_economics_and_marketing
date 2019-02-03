@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="217"
+   width="230"
+   version="1.0"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Indifference_curves_showing_budget_line_3.svg">
+  <defs
+     id="defs50" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1485"
+     inkscape:window-height="880"
+     id="namedview48"
+     showgrid="false"
+     inkscape:zoom="1.0875576"
+     inkscape:cx="-34.686441"
+     inkscape:cy="108.5"
+     inkscape:window-x="1856"
+     inkscape:window-y="1080"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <style
+     id="style4">
+ .text1{font-size:12px;font-family:Bitstream Vera Sans;text-anchor:middle;text-align:center;fill:#000000}
+ .cl1{ font-size:10px;font-weight:bold;;}
+ .cl2{ font-size:14px;font-weight:bold;font-family:Baskerville Old Face;;}
+</style>
+  <metadata
+     id="metadata6">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="stroke-linejoin:miter;stroke:#000000;stroke-linecap:butt;stroke-width:2.017;fill:none"
+     d="m 25.069,5.820 0,189.337 191.196,0"
+     id="path8" />
+  <path
+     style="stroke-linejoin:miter;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-width:0.485px;fill:#000000"
+     d="m 21.824,8.194 3.253,-5.635 3.325,5.637 -6.579,-0.002 z"
+     id="path10" />
+  <path
+     style="stroke-linejoin:miter;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-width:0.597px;fill:#000000"
+     d="m 213.717,191.333 6.941,4.007 -6.944,4.096 0.003,-8.104 z"
+     id="path12" />
+  <path
+     style="stroke-linejoin:miter;stroke:#ff0000;stroke-linecap:butt;stroke-width:1.684;fill:none"
+     d="M 38.517,24.622 C 66.307,112.206 118.289,154.948 204.368,180.383"
+     id="path14" />
+  <text
+     style="font-size:12px;font-family:Bitstream Vera Sans;text-anchor:middle;text-align:center;fill:#000000"
+     transform="matrix(0,-1,1,0,0,0)"
+     y="19.779"
+     x="-29.395"
+     id="text16">Good Y</text>
+  <text
+     y="208.681"
+     x="188.081"
+     class="text1"
+     id="text18">Good X</text>
+  <path
+     style="stroke-linejoin:miter;stroke:#ff0000;stroke-linecap:butt;stroke-width:1.684;fill:none"
+     d="M 65.158,21.554 C 101.085,106.179 119.909,116.631 202.290,147.985"
+     id="path20" />
+  <path
+     style="stroke-linejoin:miter;stroke:#ff0000;stroke-linecap:butt;stroke-width:1.684;fill:none"
+     d="M 94.843,20.609 C 130.771,105.235 120.709,90.922 203.089,122.275"
+     id="path22" />
+  <text
+     y="14.162"
+     x="101.059"
+     class="text1 cl2"
+     id="text24">I</text>
+  <text
+     y="18.601"
+     x="108.371"
+     class="text1 cl1"
+     id="text26">3</text>
+  <text
+     y="18.293"
+     x="65.915"
+     class="text1 cl2"
+     id="text28">I</text>
+  <text
+     y="22.732"
+     x="73.227"
+     class="text1 cl1"
+     id="text30">2</text>
+  <text
+     y="19.859"
+     x="37.999"
+     class="text1 cl2"
+     id="text32">I</text>
+  <text
+     y="24.297"
+     x="45.311"
+     class="text1 cl1"
+     id="text34">1</text>
+  <path
+     style="stroke-linejoin:miter;stroke:#0000ff;stroke-linecap:butt;stroke-width:1.600;fill:#0000ff"
+     d="M 25.496,58.110 202.656,155.590"
+     id="path36" />
+  <path
+     style="stroke-linejoin:miter;stroke:#000000;stroke-linecap:butt;stroke-dasharray:6.644, 3.322;stroke-width:1.661;fill:none"
+     d="m 141.625,123.079 0,71.711"
+     id="path38" />
+  <path
+     style="stroke-linejoin:miter;stroke:#000000;stroke-linecap:butt;stroke-dasharray:6.446, 3.223;stroke-width:1.611;fill:none"
+     d="m 141.595,122.638 -116.070,0"
+     id="path40" />
+  <text
+     y="208.733"
+     x="143.339"
+     class="text1"
+     id="text42">Qx</text>
+  <text
+     y="127.700"
+     x="11.407"
+     class="text1"
+     id="text44">Qy</text>
+</svg>

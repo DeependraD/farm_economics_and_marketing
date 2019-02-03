@@ -1,0 +1,275 @@
+---
+title: "Concepts of Marketing"
+subtitle: "An introduction"
+author: "Deependra Dhakal"
+date: "`r Sys.Date()`"
+output:
+  bookdown::pdf_document2:
+    toc: yes
+    toc_depth: 3
+    keep_tex: yes
+header-includes:
+  - \usepackage{booktabs}
+  - \usepackage{longtable}
+  - \usepackage{array}
+  - \usepackage{multirow}
+  - \usepackage[table]{xcolor}
+  - \usepackage{wrapfig}
+  - \usepackage{float}
+  - \usepackage{colortbl}
+  - \usepackage{pdflscape}
+  - \usepackage{tabu}
+  - \usepackage{threeparttable}
+  - \usepackage[normalem]{ulem}
+  - \usepackage{xcolor}
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+knitr::opts_chunk$set(tidy = TRUE, 
+                      echo = FALSE, 
+                      cache = TRUE)
+options(knitr.kable.NA = "")
+```
+
+
+# (PART) Questions {-}
+
+- What is Agriculture Marketing?
+- What are the selection criteria of best channel for distribution of agriculture commodities.
+-	Classify markets of Nepal on different basis.
+-	What is a marketing channel? Explain with suitable examples.
+- What is marketing margin?
+- What is a whole sale market?
+- What is market?
+- Explain the importance of agricultural marketing in socio-economic development of Nepal.
+-	Describe the role of cooperatives in Nepalese economy.
+
+# (PART) Solution {-}
+
+# Meaning and definition of Marketing
+
+In general, the activity of buying and selling of goods or services is called marketing. Only in the most conservative sense, marketing would be considered selling.
+
+\textbf{Old concept of Marketing}: \newline According to this concept, the function of marketing starts only after the production of goods and it automatically ends when they are sold out. The old concept maintains that the main objective of marketing is to supply goods or services from the producer to the consumers and earn a profit by selling them. For this, advertisement and different sales promotion techniques are used.
+    
+> _"Marketing comprises both buying and selling activities."_ --- Prof. Pyle
+
+> _"Marketing is the performance of business activities that direct the flow of goods and services from the producer to consumers or users."_ --- American Marketing Association, 1960
+
+Older concepts are product oriented, which put emphasis on the sale rather than needs, interests and wants of the customers.
+    
+\textbf{Modern concept}: \newline This concept focuses on consumer's need, and relies on the concept of market as a platform for matching production and consumption. Introduces the concept of consumerism.
+    
+> _"Marketing is the business process by which products are matched with markets and through which transfers of ownership are effected."_ --- Cundiff and Still
+
+> _"Marketing is the process of planning and executing the conception, pricing, promotion and distribution of ideas, goods and services to create exchanges satisfying individuals and organizational objectives."_ --- American Marketing Association, Modified definition
+
+> _"Marketing is the performance of activities which seek to accomplish an organization's objectives by anticipating customer or client needs and directing a flow of need-satisfying goods and services from the producer to customers of clients."_ --- Jerome McCarthy and William D. Perreault
+
+Marketing starts with generation of ideas and does not end untill the customers are satisfied. It applies to all profit and non-profit making organizations. This introduces the integrated approach to marketing rather than only selling and promotion approach. The features are:
+
+  1. Consumer satisfaction
+  2. Integrated process
+  3. Marketing as a social system and activity
+  4. Systems approach
+  5. Marketing information system
+  6. Social responsibility
+
+**Core marketing concepts**
+\newline 1. Peoples\newline - Needs: The starting point\newline - Wants: The desire to fulfill the needs\newline - Demands: Human needs which are supported by their buying capacity and willingness
+\newline 2. Products\newline Goods, Services and Ideas
+\newline 3. Exchange and transaction
+\newline 4. Relationship and network
+\newline 5. Markets
+
+**Evolution of marketing**
+
+  - Self sufficient economy
+  - Primitive barter economy
+  - Local market economy
+  - Money economy
+  - Town economy
+  - International economy
+
+There are five popular concepts of marketing. They are summarised in Table \@ref(tab:marketing-fives).
+
+```{r marketing-fives, results="asis"}
+readxl::read_xlsx("./data/concepts_of_economics.xlsx", sheet = "marketing_fives", skip = 1) %>% 
+  knitr::kable(format = "latex", booktabs = TRUE, caption = "Different concepts of marketing") %>% 
+  kableExtra::kable_styling(latex_options = c("HOLD_position"), full_width = FALSE) %>% 
+  kableExtra::row_spec(row = 0, bold = TRUE) %>% 
+  kableExtra::column_spec(1, width = "3.2cm") %>% 
+  kableExtra::column_spec(2:4, width = "3.6cm")
+```
+
+# Importance of marketing
+
+The importances of marketing is summarized in Table \@ref(tab:marketing-importance).
+
+```{r marketing-importance, results="asis"}
+
+imp_marketing <- list("Consumers" = c("Customer satisfaction", "Selection facility", "Product information", "Standard of living"), 
+          "Firm" = c("Revenue earning", "Information", "Mass distribution", "Goodwill"), 
+          "Society" = c("Employment", "Poverty eradication", "Standard of living", "Creation of utilities", "Utilization of resources"))
+
+imp_marketing %>% 
+  enframe() %>% 
+  knitr::kable(col.names = c("Importance to","Importances"), format = "latex", booktabs = TRUE, caption = "Importance of marketing") %>% 
+  kableExtra::kable_styling(latex_options = c("HOLD_position"), full_width = FALSE) %>% 
+  kableExtra::row_spec(row = 0, bold = TRUE) %>% 
+  kableExtra::column_spec(2, width = "10cm") %>% 
+  kableExtra::column_spec(1, width = "4cm")
+```
+
+
+# Marketing mix and its components
+
+Several different activities should be performed to meet the marketing objectives. Hence the combination of all the activities conducted to satisfy the needs of a target market is called marketing mix. The activities in clude: Research, identification of customers' needs, and production of the goods or services accordingly and satisfying the customers through sales and distribution are included under marketing mix. Marketing activities should be coordinated in such a way that the needs of target markets are completely satisfied. So, the coordination and well management of entire marketing activities is marketing mix.
+
+> _"Marketing mix is the controllable variables which the company puts together to satisfy its target market."_ --- Jerome McCarthy and William Perrault
+
+> _"Marketing mix is the set of marketing tools that the firm uses to pursue its marketing objectives in the target market."_ --- Phillip Kotler
+
+The combination of the major four components such as products, price structure, distribution system and promotional activities to be included in the marketing programs of a firm is "marketing mix".
+
+The fulfillment of customers' needs and wants should be considered while making marketing mix decision. Since all the four components are interrelated, decision regarding either one of these also affects others. Marketing mix represents a dynamic condition of marketing activities of the firm. The marketing mix changes accordingly with the changes in customers needs and wants. 
+
+At first Prof. Neil H. Borden of Harvard Business School used the term "Marketing Mix". However, Prof. Jerome McCarthy of Michigan state university presented "Marketing Mix" as four "Ps" in his book basic marketing published in 1960. He included Product, Place, Price and Promotion under these four "Ps".
+
+## Components of marketing
+
+There are four prime components of marketing. Each is summarized with its constituents in the Table \@ref(tab:component-marketing) 
+
+```{r component-marketing, results="asis"}
+readxl::read_xlsx("./data/concepts_of_economics.xlsx", sheet = "comps_m_mix") %>% 
+  knitr::kable(format = "latex", booktabs = TRUE, caption = "Components of marketing") %>% 
+  kableExtra::kable_styling(latex_options = c("HOLD_position"), full_width = FALSE) %>% 
+  kableExtra::row_spec(row = 0, bold = TRUE) %>% 
+  kableExtra::column_spec(1:4, width = "3.95cm")
+```
+
+1. Product mix
+\newline Product means goods, materials, services and even ideas. The term is inclusive of quality, price, brand, color, packaging, seller's services, goodwill, reputation, guarantee, and warranty of goods besides physical goods themselves with which the customers can get satisfaction. Broadly, it includes:
+
+  - Product planning and development
+  - Standardizing and grading
+  - Branding and packaging
+
+2. Place mix
+\newline Also called distribution mix, it consists of two sub-components -- selection of a distribution channel and physical distribution of products.
+
+  - Selection of distribution channel; The means or medium used to carry products to the ultimate consumers is called distribution channel. The business firm, which can select a proper channel to deliver right good to the right customer at right time can get success. The selection of channel is affected by nature of product, distribution cost, financial position of the firm, market situation, market competition, etc.
+  - Physical distribution; includes management of necessary means of tranportation, warehouse for storing, inventory control, material handling, order processing, place analysis etc. This creates place utility and time utility of products.
+  
+3. Promotion mix
+\newline Includes the activites such as personal selling, advertising, sales promotion, publicity and public relations. Besides these, proper installation, repair, supply of parts, stability in quality and post-sales customer services are also included in it.
+
+4. Price mix
+\newline This is very sensitive component of marketing mix. Decisions on selling price, commission rate, etc. are taken into account. While taking decisions on price, reasonable return on the investment of the firm and customers' services should be considered.
+
+Besides above mentioned four components, service oriented firms should also integrate the following components to the marketing mix (suggested by Booms and Binter).
+
+5. Process mix
+6. People mix
+7. Physical evidence mix
+
+The importance of marketing mix can be summarized in the points below.
+
+  - Meeting consumer's needs
+  - Integrated approach to marketing
+  - Environmental consideration
+  - Providing employment opportunities
+  - Increasing education to consumers
+  - Raising standard of living
+  - Increase in national income
+
+# Meaning of agricultural marketing
+
+Simply, the activity of buying and selling of agricultural inputs and products is called agricultural marketing. The market where the activities of buying and selling of fertilizers, seeds, pesticides, agricultural tools, etc. that are necessary for agricultural production and development occurs is called agriculture inputs and tools market. The activities of buying and selling of food grains, cash crops, vegetables, dairy products, fishery, and horticultural products are some sub-sectors of agricultural marketing. Distinctively, agricultural markets are:
+
+1. Agro-inputs and tools market
+  - Fertilizer
+  - Seeds
+  - Pesticides
+  - Agro-tools
+  - Other inputs
+
+2. Agro-product market
+  - Food grains
+  - Cash crops
+  - Vegetables
+  - Fruits
+  - Dairy products
+  - Meat/fish
+  - Other products
+
+Alike other markets, mutual interaction between the buyer and seller is necessary in the agricultural market. Agricultural market is simply not possible without active role of farmer. But, uniquely, the role of farmers is both as buyers and as sellers in the agricultural market. The farmers become buyers of agricultural inputs and tools and they become sellers in the market of agro-products.
+
+# Typical structure of agriculture marketing in Nepal
+
+Farmers $\LARGE{\Rightarrow}$ (Local market $\LARGE{\Rightarrow}$ Primary market $\LARGE{\Rightarrow}$ Central market) $\LARGE{\Rightarrow}$ Retail market $\LARGE{\Rightarrow}$ Consumers
+
+Agricultural market has a special role in Nepalese economy; more than $2/3^{rd}$ of population is involved in agricultural operations. Agricultural commodities also form a major fraction of the total exports. Similarly, raw materials essential to production of industrial goods are also supplied by agriculture and forest sectors. So, Nepalese manufacturing sector is also linked to agriculture sector in some ways.
+
+# Characteristics/Features of agricultural goods
+
+1. Production related
+  - Seasonal production
+  - Scattered production
+  - Small scale production
+
+2. Marketing related
+  - Perishable products
+  - Bulky products
+  - Quality and quantity variation
+  - Presence of intermediaries
+  
+3. Consumption related
+  - Continuous consumption
+  - Inelastic demand
+  - Price fluctuations
+  - Elastic supply
+
+# Prospects of agricultural marketing in Nepal
+
+The prospects of agricultural marketing in Nepal can be described as follows:
+
+1. Increased demand for agro-products
+\newline There is increasing demand for agricultural products like paddy, wheat, vegetable, fruits, milk, meat, etc. The population growth rate is high, i.e., ~ 2%. The growth in population stimulates the higher demand for food products.
+    
+2. Export possibility
+\newline Nepal, as a biodiversity rich country, has great possibility of improving export of unique agro-products like fresh fruits, tea, coffee, and other high value products.
+
+3. Improvement in infrastructure
+\newline Infrastructures like transportation and warehousing facilities in Nepal are gaining development. These facilities promote the movement and storage of agricultural products throughout the country.
+
+4. Government policy
+\newline The government of Nepal has prioritized development and promotion of agricultural commodities. Many faciliites and incentives are provided to the farmers for increasing agricultural production.
+
+5. Insitutional arrangement
+\newline Institutions like Agriculture Development Bank Ltd. (ADBL), National Cooperative Bank Ltd., Nepal Agriculture Research Council (NARC), National Cooperative Development Board (NCDB), IAAS, AFU, agricultural cooperatives and agricultural offices provide essential services to the farmers.
+
+# Problems of agricultural marketing in Nepal
+
+1. Lack of organized market
+2. Predominance of intermediaries; market affected by exploitative approaches of intermediaries
+3. Lack of standardization and grading
+4. Lack of warehousing
+5. Lack of transportation facility
+6. Lack of marketing skills
+7. Lack of effective peasants' organization
+8. Lack of market information system
+9. Lack of minimum support price system
+10. Lack of effective pricing policy
+  
+# Differences between wholeselling and retailling
+
+```{r wholesale-retail, results="asis"}
+readxl::read_xlsx("./data/concepts_of_economics.xlsx", sheet = "wholesale_retail", skip = 1) %>% 
+  knitr::kable(format = "latex", booktabs = TRUE, caption = "Difference between wholeselling and retailling") %>% 
+  kableExtra::kable_styling(latex_options = c("HOLD_position"), full_width = FALSE) %>% 
+  kableExtra::row_spec(row = 0, bold = TRUE) %>% 
+  kableExtra::column_spec(1, width = "3.5cm") %>% 
+  kableExtra::column_spec(2:3, width = "5.25cm")
+```

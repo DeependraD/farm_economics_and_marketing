@@ -1,0 +1,1822 @@
+---
+# title: "" # custom title page will be included in body
+# author: "" # this line is unnecessary with custom title page
+# date: "`r Sys.Date()`" # this line is unnecessary with custom title page
+documentclass: book
+fontsize: 11pt
+# linestretch: 1.5 # line spacing
+output: 
+  bookdown::pdf_document2:
+    toc: yes
+    toc_depth: 3
+    keep_tex: yes
+    includes:
+      before_body: custom_title_body.tex
+    pandoc_args: --chapters
+header-includes:
+  - \newlength{\drop}
+  - \usepackage{booktabs}
+  - \usepackage{longtable}
+  - \usepackage{emptypage}
+  - \usepackage[table]{xcolor}
+  - \usepackage{array}
+  - \usepackage{multirow}
+  - \usepackage{wrapfig}
+  - \usepackage{float}
+  - \usepackage{colortbl}
+  - \usepackage{pdflscape}
+  - \usepackage{tabu}
+  - \usepackage{threeparttable}
+  - \usepackage[normalem]{ulem}
+  - \usepackage{rotating}
+  - \renewcommand{\textfraction}{0.05}
+  - \renewcommand{\topfraction}{0.8}
+  - \renewcommand{\bottomfraction}{0.8}
+  - \renewcommand{\floatpagefraction}{0.75}
+  - \raggedbottom
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+require(Hmisc)
+knitr::opts_chunk$set(tidy = TRUE, cache = TRUE, 
+                      echo = TRUE, 
+                      tidy.opts = list(width.cutoff=50), 
+                      eval = TRUE, 
+                      fig.show = "hold",
+                      echo = FALSE,
+                      fig.align = "center", 
+                      fig.asp = 0.6, message = FALSE, warning = FALSE)
+options(knitr.kable.NA = "", digits = 3)
+```
+
+
+# Background {-}
+
+The handout is intended for students trying to have basic starting idea on the course of economics. An agricultural economics based approach is taken, to delve in to the concepts of Micro and Macro economics. The note is expected to be helpful to students preparing for upper and lower secondary level examinations.
+
+While teaching Farm Management and Marketing course, I felt the necessity to deliver contents to students in a broad context, afterall farm mangement is just a part wider field of economics. The question solution approach to this note should provide succinct answers to, as well as a more elaborate exposition in a follow through, conceptual questions surrounding the applied course. The contents presented here, however, do not form a sound basis for practical understanding.
+
+
+# (PART) Questions {-}
+
+**Economics and international trade questions**
+
+- State Adam Smiths' definition of economics.
+- Define cost.
+- What is income statement?
+- Give an example of monopoly market.
+- What is Farm Planning?
+- What is Agriculture Marketing?
+- What are the types of utility? Give examples.
+- State the law of supply. Describe with the help of supply curve diagram.
+- What are the characteristics of perfect competition market?
+- What do you mean by price variation? Describe with examples.
+- What are the functions of WTO?
+- Explain the principle of substitution.
+- Write the importance of farm plan.
+- What do you mean by Net-worth statement?
+- Give the differences between complete and partial budgeting.
+- Agriculture commodities are seasonal in nature. Justify.
+- What are the selection criteria of best channel for distribution of agriculture commodities.
+- Write the characteristics of the material welfare definition of economics.
+- Explain in detail about the farm record.
+- What are the objectives of farm management?
+-	State the law of demand with its assumptions. Give a description with suitable examples.
+-	Define farm management. Highlight its importance.
+-	Explain the principle of product substitution in detail.
+-	Explain in detail about farm efficiency measures.
+-	Describe the role of cooperatives in Nepalese economy.
+-	Classify markets of Nepal on different basis.
+-	What is a marketing channel? Explain with suitable examples.
+- Define capital.
+- Define cooperative farming.
+- What is marketing margin?
+- What is a whole sale market?
+- Write the features of land.
+- What are the problems of farm record keeping in Nepal?
+- Explain the law of diminishing marginal utility.
+- Write the properties of indifference curve with examples.
+- What is market?
+- Explain the importance of agricultural marketing in socio-economic development of Nepal.
+- Write notes on following topics:
+    - Goods
+    - Labor
+    - Wealth
+    - Service
+    - Equilibrium
+    - Price line
+- What is meant by elasticity of supply?
+
+**Agricultural marketing questions**
+
+- What is Agriculture Marketing?
+- What are the selection criteria of best channel for distribution of agriculture commodities.
+-	Classify markets of Nepal on different basis.
+-	What is a marketing channel? Explain with suitable examples.
+- What is marketing margin?
+- What is a whole sale market?
+- What is market?
+- Explain the importance of agricultural marketing in socio-economic development of Nepal.
+-	Describe the role of cooperatives in Nepalese economy.
+
+# (PART) Economics and international trade {-}
+
+## Economics: meaning and definition
+
+An economy is a system for coordinating society's productive activities. 
+
+- Economics is the social science that studies the production, distribution, and consumption of goods and services.
+- Economics is the study of individual choices and decisions. People must make choices because resources are scarce.
+
+> \textbf{Microeconomics} \newline The branch of economics that studies how people make decisions and how these decisions interact.
+
+> \textbf{Macroeconomics} \newline The branch of economics that is concerned with overall ups and downs in the economy.
+
+The objective of microeconomics are:
+
+1. Economic efficiency: productive efficiency, consumptive efficiency and allocative efficiency
+2. Equity: A distribution of income that is considered to be fair or just.
+
+The discipline of economics has developed principles, theories, and models that isolate the most important determinants of economic events. In constructing a model, economists make assumptions to eliminate unnecessary detail to reduce the complexity of economic behavior. Once modeled, economic behavior may be presented as a relationship between dependent and independent variables. The behavior being explained is the dependent variable; the economic events explaining that behavior are the independent variables.The dependent variable may be presented as depending upon one independent variable, with the influence of the other independent variables held constant (the _ceteris paribus_ assumption).
+
+### Problem of scarcity
+
+Economics is the study of scarcity-- the study of the allocation of scarce resources to satisfy human wants. People's material wants, for the most part, are unlimited. Output, on the other hand, is limited by the state of technology and the quantity and quality of the economy's resources. Thus, the production of each good and service involves a cost. A **good** is usually defined as a physical item such as a car or a hamburger, and a service is something provided to you such as insurance or a haircut. Scarcity is a fundamental problem for every society. Decisions must be made regarding _what to produce_, _how to produce_ it, and _for whom to produce_. What to produce involves decisions about the kinds and quantities of goods and services to produce. How to produce requires decisions about what techniques to use and how economic resources (or factors of production) are to be combined in producing output.
+
+### Positive and normative economics
+
+Positive questions have to do with explanation and prediction, normative questions with what ought to be. Positive and normative economics are often synthesized in the style of practical idealism. In this discipline, sometimes called the "art of economics," positive economics is utilized as a practical tool for achieving normative objectives.
+
+#### Positive economics
+
+Positive economics tries to reason the cause and effect of an economic activity. Questions such as "What will happen if?" and "What impact will it have on" are all in the realm of positive analysis. Positive analysis is central to microeconomics. Theories are developed to explain phenomena, are tested against observations, and are used to construct models from which predictions are made.
+
+The use of economic theory for prediction is important both for the managers of firms and for public policy. Suppose the federal government is considering raising the tax on gasoline. The tax would affect the price of gasoline, consumers' preferences for small or large cars, the amount of driving that people do, and so on. To plan sensibly, oil companies, automobile companies, producers of automobile parts, and firms in the tourist industry would all want to know how large the various effects of this tax will be. Government policymakers would also need quantitative estimates of the effects of the tax. They would want to determine the costs imposed on consumers (perhaps broken down by income categories); the effects on profits and employment in the oil, automobile, and tourist industries; and the amount of tax revenue likely to be collected each year.
+
+#### Normative economics 
+
+A part of economics that expresses value or normative judgments about economic fairness or what the outcome of the economy or goals of public policy ought to be. Sometimes we want go beyond explanation and prediction to ask questions, such as "What is best?". This involves normative analysis. For example:
+
+> _"The price of milk should be $6 a gallon to give dairy farmers a higher living standard and to save the family farm."_ --- Normative concept of economics
+
+This is a normative statement, because it reflects value judgments. This specific statement makes the judgment that farmers deserve a higher living standard and that family farms ought to be saved. Subfields of normative economics include social choice theory, cooperative game theory, and mechanism design.
+
+Normative analysis is important both for managers of firms and for designers of new public policies. Again, consider a new tax on gasoline. Automobile companies would want to determine the best (profit-maximizing) mix of large and small cars to produce once the tax is in place, or how much money should be invested to make cars more fuel-efficient. For policymakers, the primary issue is likely to be whether this tax is in the public interest. The same policy objectives (say, an increase in tax revenues and a decrease in our dependence on imported oil) might be met more cheaply with a different kind of tax, such as a tariff on imported oil. Normative analysis is not only concerned with alternative policy options; it also involves the design of particular policy choices. For example, suppose it has been decided that a gasoline tax is desirable. Balancing costs and benefits, we then ask what is the optimal size of the tax?
+
+> **Resource**\newline Anything that can be used to produce something else.
+
+> **Scarce**\newline A state of resource availability of not being able to satisfy all the various ways a society wants to use them.
+
+The **opportunity cost** of an item-what you must give up in order to get it-is its **true cost**.
+
+"How much" decisions require making trade-offs at the margin: comparing the costs and benefits of doing a little bit more of an activity versus doing a little bit less.
+
+People usually respond to incentives, exploiting opportunities to make themselves better off.
+
+- Market economy: An economy in which decisions about production and consumption are the result of decentralized decisions made by individual producers and consumers.
+- Command economy: there is a central authority making decisions about production and consumption.
+
+"When the individual pursuit of self-interest leads to bad results for society as a whole, there is \textbf{market failure}."
+
+### Pioneers' perspective
+
+**Adam Smith**
+
+In 1776 book (_An Inquiry into the Nature and Causes of the Wealth of Nations_), Adam Smith wrote about how individuals, in pursuing their own interests, often end up serving the interests of society as a whole. Of a businessman whose pursuit of profit makes the nation wealthier, Smith wrote:
+
+> _"[H]e intends only his own gain, and he is in this, as in many other cases, led by **an invisible hand** to promote an end which was no part of his intention."_ --- Adam smith
+
+Adam smith was the fist economist who defined economics as science of wealth. The main features of Adam Smith's definition were:
+
+- Economics is the study of wealth only and deals with production, consumption, distribution and exchange of wealth.
+- Scarce and useful material goods were regarded as wealth but non material goods like service of a serviceman, economists, and free goods like air are not wealth.
+- Economics studies the causes of wealth change that bring economic development.
+
+Criticisms of Adam Smith's definition are:
+
+- Too much importance on economics as study of wealth.
+\newline This definition places excess importance to wealth and only secondary importance to study as study of mankind. It considers wealth as end, which is infact only the means. Marshall correctly pointed out that economics on one side is study of wealth and on the other side study of man.
+- Restricted meaning of wealth.
+\newline The definition does not encompass service and non-material goods, which might in themselves be scarce as wealth.
+- Concept of economic man.
+\newline This definition stated that everybody works more to satisfy his/her self interest. There is not much difference between personnel and social interest. Modern definition, as stated by Marshall and others, stresses that economics studies the activity of common man, not a "selfish" or isolated person.
+- No mention of man's welfare.
+\newline This definition sheds no light whatsoever to the economic welfare of a society, aside from individual's viewpoint.
+- No study of means.
+\newline This definition does not consider wealth as means to satisfy human wants.
+- Narrow view of subject matter
+\newline According to Lionel Robbins economics studies both material and non material resources.
+- Defective logic
+\newline The definition on overall is of narrow prospect, controversial and unscientific.
+
+**Alfred Marshall**
+
+A British economist (1842-1924), who developed some of the most important concepts in microeconomics. In his best-known work, Principles of Economics, he retained the emphasis on the importance of costs, which was standard in classical economics. But he added to it, helping to create neo-classical economics, by explaining that the output and price of a product are determined by both supply and demand, and that marginal costs and benefits are crucial. He was the first economist to explain that demand falls as price increases, and that therefore the demand curve slopes downwards from left to right. He was also first with the concept of price elasticity of demand and consumer surplus.
+
+> "_Economics is a study of mankind in the ordinary business of life. It examines that part of individual and social action which is most closely connected with attainment and use of material requisite of well being_." --- Alfred Marshall
+
+Characteristics of material welfare definition of economics:
+
+1. A study of mankind
+2. Ordinary business of life
+3. Study of individual and social activities
+4. Study of material welfare
+5. Normative science
+6. Makes clear the scope of economics (classificatory definition)
+
+Criticisms of material welfare definition of economics:
+
+- Study of every activities as economic and all men.
+- Restricts the scope of economics
+- Lack of clear description of welfare
+- Economics as pure science; definition posits economics only as social science
+- Non analytical definition (classificatory nature)
+- Economics only as a positive science
+- Impractical
+- Narrow view of what constitutes economic activities
+
+**Lionel Robins**
+
+> "_Economics is the science which studies human behavior as a relationship between ends and scarce means which have alternative uses._" --- Lionel Robins
+
+Characteristics of scarcity/Robin's definition of economics:
+
+1. Unlimited wants/ends
+2. Scarce resources/means
+3. Means have alternative uses
+4. Wants are of different intensities
+5. Problem of choice
+6. Positive economics -- it emphasizes use of resources/means to meet the ends.
+7. Analytical definition
+8. Explains the orientation of human economic behavior
+9. Clear description about scope of economics
+
+Criticisms of scarcity definition
+
+- Self contradictory (Positive economics vs. Problem of choice)
+- Concealed concept of welfare
+- Very wide view of scope of economics
+- Ineffective attempt to make economics a positive science
+- Artificial separation of economists' personality
+- Impractical definition
+- Does not address economic problems arising from other factors other than scarcity
+- Not applicable to describe exonomics of extremes (Very rich and very poor countries)
+- Assumes a clear demarcation between means and ends, which is not always the case in practical life
+
+## Utility
+
+The specialized language of economics makes broad use of the word "utility." It means much more than just usefulness. It takes on a meaning of satisfaction, or happiness, or fulfillment. If an object has utility in an economic sense, then it is bringing some kind of reward to its owner or the person who is using it. It is a concept applicable to all goods and services. Food has utility because it keeps people alive. A football game has utility because it entertains the spectators. Social friends have utility because they are there to help or to be helped.
+
+> \textbf{Utility} \newline Satisfaction derived from consuming a good
+
+### Cardinal and ordinal utility
+
+About 200 years ago, Jeremy Bentham (1748-1832) and a number of other economists struggled to find a way to measure utility. They tried to assign an actual numerical value to the amount of satisfaction that each good or service produced and conferred on its user. These economists developed a hypothetical unit, called a "util," to measure consumers' levels of happiness, or satisfaction.
+
+> \textbf{Utils} \newline Hypothetical units of satisfaction derived from consumption of goods or services.
+
+**Cardinal utility**
+
+The assignment of specific, but hypothetical, numerical values to the level of satisfaction gained from the consumption of a good. The unit of measurement is the hypothetical util. 
+
+The early Neoclassical approach was developed by Edgeworth, Sidgwick, Marshall, and Pigou. It assumes the following:
+
+- Utility is scale-measurable by observation or judgment.
+- Preferences are exogenously given and stable.
+- Additional consumption provides smaller and smaller increases in utility (diminishing marginal utility).
+- All individuals have interpersonally commensurable utility functions.
+
+With these assumptions, it is possible to construct a social welfare function simply by summing all the individual utility functions. Note that such a measure would still be concerned with the distribution of income (distributive efficiency) but not the distribution of final utilities. 
+
+The concept of Cardinal utility can be used as a tool to conveniently communicate how consumer behavior works.
+
+**Ordinal utility**
+
+It is a way of considering consumer satisfaction in which goods are ranked in order of preference: first, second, third, etc. Ordinal preferences do not depend on specific numbers or values.
+
+In economics, an ordinal utility function is a function representing the preferences of an agent on an ordinal scale. The ordinal utility theory claims that it is only meaningful to ask which option is better than the other, but it is meaningless to ask how much better it is or how good it is. All of the theory of consumer decision-making under conditions of certainty can be, and typically is, expressed in terms of ordinal utility.
+
+### Marginal utility (MU) and Total utility (TU)
+
+The additional amount of satisfaction gained from consuming one more unit of a good and Total Utility (TU) is the cumulative satisfaction received from the entire collection of the good or service.
+
+- Marginal Utility [MU] = the change in the level of utility when consumption of a good is increased by one unit. 
+
+$$MU = \delta TU/\delta Y$$
+
+- Total Utility [TU] = the total level of satisfaction derived from consuming a given bundle of goods and services.
+
+Applying these concepts to a hypothetical example of consumer behavior enhances understanding. The example here is drinking bottles of cold water after a long, hot day of work. In this case, one major prediction regarding consumer behavior is that "first is best." The first unit of a good consumed yields the most satisfaction. The second unit is less satisfying. Additional satisfaction, or utility, comes from each unit consumed, but typically, the amount of satisfaction from each successive bottle of water diminishes.
+
+## Cost
+
+Cost is the value of the factors of production used in producing and distributing goods and services. The cost of a factor unit equals the maximum amount which the factor could earn in alternative employment.
+
+The cost refers to:
+- The amount of fund used in production. 
+- Outlay of funds and/or productive purposes. 
+- The expenses incurred on productive services and physical input factors.
+
+Cost analysis is an important tool to describe the relationship of costs to income. Commonly, there are two types of costs used in farming viz fixed costs and variable costs. However, marginal or added cost is also an important tool to guide the farmer to decide, how far he can push the production and how much of various resources he can use.
+
+**Fixed cost**
+
+Fixed cost are those costs which do not change in relation to the output. This cost is therefore ever present, even when no production is being done. This may be cash or non-cash. These costs are related to fixed resources and are overhead costs. e.g. 
+
+- Cash fixed cost: Land, taxes, insurance, lease rent, salary, annually hired labor
+- Non cash fixed cost: Depreciation of building, interest on money, family labor
+
+Fixed costs have little relation to making decision on the level of production of farming practices.
+
+**Variable cost**
+
+Those cost that vary with the level of production. The costs increases when the production is increased and vice versa. The variable costs are nil, if there is no production on the farm. 
+
+In the beginning, as the production increases, variable costs rise quite rapidly, but with further rise in production variable costs do not increase proportionately with the production due to economics brought about by mass production. Later on, as diminishing returns set in, variable costs start rising more rapidly than the production. If farming is to be carried, the variable cost must be less than selling price.
+
+Example of variable costs include current supplies such as seeds, fertilizers, irrigation, insecticides, hired labour charges, interest on working capital.
+
+**Average cost**
+
+**Marginal cost**
+
+The additional cost of doing a little bit more (or 1 unit more if a unit can be measured) of an activity.
+
+How do you make a rational decision about when the alarm should go off? What you have to do is to weigh up the costs and benefits of additional sleep. Each extra minute in bed gives you more sleep (the marginal benefit), but gives you more of a rush when you get up (the marginal cost). The decision is therefore based on the costs and benefits of extra sleep, not on the total costs and benefits of a whole night's sleep.
+
+**Rational decision**
+
+Doing more of an activity if its marginal benefit exceeds its marginal cost and doing less if its marginal cost exceeds its marginal benefit.
+
+Rational decisions are made with Rational choices; that involve weighing up the benefit of any activity against its opportunity cost.
+
+## Production-possibility frontier
+
+A production-possibility frontier shows the maximum number of alternative combinations of goods and services that a society can produce at a given time when there is full utilization of economic resources and technology. 
+
+Alternative combinations of guns and butter output for a hypothetical economy (guns represent the output of military goods, while butter represents nonmilitary goods and services) is shown in Table \@ref(tab:ppschedule). In choosing what to produce, decision makers have a choice of producing, for example, alternative C-- 5,000 guns and 14 million units of butter-- or any other alternative presented.
+
+```{r ppschedule, echo=FALSE}
+pps_less <- readxl::read_xlsx("./../data/concepts_of_economics.xlsx", 
+                               sheet = "production_possibility_schedule", col_names = TRUE)
+
+pps_less %>% 
+  mutate_if(is.numeric, function(x) {
+    kableExtra::cell_spec(x, "latex", bold = T, color = kableExtra::spec_color(x, end = 0.8),
+                          font_size = kableExtra::spec_font_size(x))
+    }) %>%
+  mutate_at("Alternative outputs", function(x) {kableExtra::cell_spec(
+    x, "latex", color = "white", bold = T,
+    background = kableExtra::spec_color(seq_along(1:nrow(.)), end = 0.9, option = "A", direction = -1)
+    )}) %>% 
+  knitr::kable(format = "latex", caption = "Production possibility schedule", 
+               escape = F, booktabs = T, linesep = "", align = "c") %>% 
+  kableExtra::kable_styling(position = "left", full_width = FALSE) %>% 
+  kableExtra::column_spec(1:3, width = "10em")
+```
+
+
+This production-possibility schedule is plotted in Figure \@ref(fig:ppfrontier). The curve, labeled PP, is called the production-possibility frontier. Point C plots the combination of 5,000 guns and 14 million units of butter, assuming full employment of the economy's resources and full use of its technology, as do all of the alternatives presented in Table \@ref(tab:ppschedule).
+
+```{r ppfrontier, fig.cap="Production possibility frontier", fig.width=7, fig.height=5, out.width="90%", echo=FALSE}
+pps_curve <- data.frame(x2 = 2.62, x1 = 3.57, y2 = 12.0, y1 = 10.0)
+
+pps_less %>% 
+  ggplot(mapping = aes(x = `Guns (thousand units)`, y = `Butter (million units)`)) +
+  geom_path(color = "blue") + 
+  geom_curve(aes(x = max(.[,2]), 
+                 y = min(.[,3]), 
+                 xend = min(.[,2]), 
+                 yend = max(.[,3])), curvature = 0.3, color = "red")
+  
+```
+
+## Indifference curve
+
+Indifference curve approach is an effort to understanding consumer behavior considering the properties of consumer preferences. The major assumptions associated with the study of consumer behavior include:
+
+1. Preferences for goods and services are complete
+2. Consumers are consistent
+3. Nonsatiation: More is preferred to less
+
+Each indifference curve is a set of points, each representing a combination of quantities of two goods or services, all of which combinations the consumer is equally satisfied with. The further a curve is from the origin, the greater is the level of utility.
+
+Economists assume that consumers maximize their own utility, subject to a budget constraint. This is a serious assumption, since consumers of all ages and stations in life are constantly buffeted by forces explicitly designed to change the choices they make as consumers or citizens. Advertising aims explicitly at changing consumer preferences. Political rhetoric works the same way, and ever-present peer pressure causes consumers to make frequent changes in the pattern of their purchases.
+
+The question here narrows in the hope that lessons from economics can help sort out what happens when the relative prices of consumer goods (food, clothing, books, vacuum cleaners, entertainment, etc.) change. When this occurs, consumers shift their purchases into the less expensive goods and away from the more expensive goods. Indifference Curves help show this movement between goods.
+
+The slope of the curve (the negative of the marginal rate of substitution of X for Y) at any point shows the rate at which the individual is willing to trade off good X against good Y maintaining the same level of utility. The curve is convex to the origin as shown assuming the consumer has a **diminishing marginal rate of substitution**. It can be shown that consumer analysis with indifference curves (an ordinal approach) gives the same results as that based on cardinal utility theory - i.e., consumers will consume at the point where the marginal rate of substitution between any two goods equals the ratio of the prices of those goods (the equi-marginal principle).
+
+There are four properties of all indifference curves. They are:
+
+1. Downward sloping: Relates to "More is preferred to less"
+2. Everywhere dense: Infinite number of isoquants
+3. Cannot intersect
+4. Convex to origin: Due to law of diminishing marginal utility
+
+A graph of indifference curves for several utility levels of an individual consumer is called an **indifference map**. Points yielding different utility levels are each associated with distinct indifference curves and these indifference curves on the indifference map are like contour lines on a topographical map. Each point on the curve represents the same elevation. If you move "off" an indifference curve traveling in a northeast direction (assuming positive marginal utility for the goods) you are essentially climbing a mound of utility. The higher you go the greater the level of utility. The non-satiation requirement means that you will never reach the "top," or a "bliss point," a consumption bundle that is preferred to all others.
+
+```{r indifference-map, fig.width=7, fig.height=5, fig.cap="Indifference curves", echo=FALSE, eval=TRUE, out.width="95%"}
+
+# # run as a block
+# df <- data.frame(x.ax = c(1, 3, 9), y.ax = c(9, 3, 1))
+# plot(df, col="white")
+# res <- bezier(seq(0, 1, len=100), df, deg=nrow(df)-1)
+# points(res, type="l", col="green", lwd=2)
+# df1 <- data.frame(x.ax = c(1, 3, 9-1)+1, y.ax = c(9-1, 3, 1)+1)
+# res1 <- bezier(seq(0, 1, len=100), df1, deg=nrow(df1)-1)
+# points(res1, type="l", col="green", lwd=2)
+
+idc1 <- Hmisc::bezier(x = c(1, 3, 9),
+                        y = c(9, 3, 1)) %>%
+  as_data_frame()
+
+idc2 <- Hmisc::bezier(x = c(1+1, 3, 9),
+                        y = c(9, 3, 1+1)) %>%
+  as_data_frame()
+
+idc3 <- Hmisc::bezier(x = c(1+2, 3, 9),
+                        y = c(9, 3, 1+2)) %>%
+  as_data_frame()
+
+idc4 <- Hmisc::bezier(x = c(1-1, 3, 9),
+                        y = c(9, 3, 1-1)) %>%
+  as_data_frame()
+
+all_idcs <- bind_rows(idc1, idc2, idc3, idc4, .id = "id")
+
+ggplot(all_idcs, aes(x = x, y = y, colour = id)) + 
+  geom_path(size = 1) + 
+  scale_color_manual(values = colorRamps::blue2green(4)) +
+  theme_classic() + 
+  coord_equal()
+```
+
+**Applications**
+
+Consumer theory uses indifference curves and budget constraints to generate consumer demand curves. For a single consumer, this is a relatively simple process. First, let one good be an example market e.g., carrots, and let the other be a composite of all other goods. Budget constraints give a straight line on the indifference map showing all the possible distributions between the two goods; the point of maximum utility is then the point at which an indifference curve is tangent to the budget line (illustrated). This follows from common sense: if the market values a good more than the household, the household will sell it; if the market values a good less than the household, the household will buy it. The process then continues until the market's and household's marginal rates of substitution are equal. Now, if the price of carrots were to change, and the price of all other goods were to remain constant, the gradient of the budget line would also change, leading to a different point of tangency and a different quantity demanded. These price / quantity combinations can then be used to deduce a full demand curve. A line connecting all points of tangency between the indifference curve and the budget constraint is called the expansion path.
+
+```{r indifference-curve1, fig.cap="An example of an indifference map with three indifference curves represented.", echo=FALSE, eval=TRUE, out.width="70%"}
+knitr::include_graphics("./../images/Simple-indifference-curves.jpg")
+```
+
+
+```{r indifference-curve2, fig.cap="Three indifference curves where Goods X and Y are perfect substitutes. The gray line perpendicular to all curves indicates the curves are mutually parallel.", echo=FALSE, eval=TRUE, out.width="70%"}
+knitr::include_graphics("./../images/Indifference-curves-perfect-substitutes.jpg")
+```
+
+
+```{r indifference-curve3, fig.cap="Indifference curves for perfect complements X and Y. The elbows of the curves are collinear.", echo=FALSE, eval=TRUE, out.width="70%"}
+knitr::include_graphics("./../images/Indifference-curves-perfect-complements.jpg")
+```
+
+
+In Figure \@ref(fig:indifference-curve1), the consumer would rather be on I3 than I2, and would rather be on I2 than I1, but does not care where he/she is on a given indifference curve. The slope of an indifference curve (in absolute value), known by economists as the marginal rate of substitution, shows the rate at which consumers are willing to give up one good in exchange for more of the other good. For most goods the marginal rate of substitution is not constant so their indifference curves are curved. The curves are convex to the origin, describing the negative substitution effect. As price rises for a fixed money income, the consumer seeks the less expensive substitute at a lower indifference curve. The substitution effect is reinforced through the income effect of lower real income (Beattie-LaFrance). The negative slope of the indifference curve incorporates the willingness of the consumer to make trade offs.
+
+If two goods are perfect substitutes then the indifference curves will have a constant slope since the consumer would be willing to switch between at a fixed ratio; shown in Figure \@ref(fig:indifference-curve2). The marginal rate of substitution between perfect substitutes is likewise constant.
+
+If two goods are perfect complements then the indifference curves will be L-shaped; shown in Figure \@ref(fig:indifference-curve3). Examples of perfect complements include left shoes compared to right shoes: the consumer is no better off having several right shoes if she has only one left shoe - additional right shoes have zero marginal utility without more left shoes, so bundles of goods differing only in the number of right shoes they include - however many - are equally preferred. The marginal rate of substitution is either zero or infinite.
+
+The different shapes of the curves imply different responses to a change in price as shown from demand analysis in consumer theory. The results will only be stated here. A price-budget-line change that kept a consumer in equilibrium on the same indifference curve:
+
+- in Figure \@ref(fig:indifference-curve1) would reduce quantity demanded of a good smoothly as price rose relatively for that good.
+
+- in Figure \@ref(fig:indifference-curve2) would have either no effect on quantity demanded of either good (at one end of the budget constraint) or would change quantity demanded from one end of the budget constraint to the other.
+
+- in Figure \@ref(fig:indifference-curve3) would have no effect on equilibrium quantities demanded, since the budget line would rotate around the corner of the indifference curve.
+
+```{r expansion-path, fig.width=6, fig.cap="Indifference curves and deduction of demand schedule for a simple good. To maximise utility, a household should consume at (Qx, Qy). Assuming it does, a full demand schedule can be deduced as the price of one good fluctuates.", echo=FALSE, out.width="70%"}
+
+knitr::include_graphics("./../images/Indifference_curves_showing_budget_line.jpg")
+```
+
+
+## The law of diminishing marginal utility
+
+As an example, in a hot day, you drink water and as the consumption of water increases marginal utility decreases. Each additional unit consumed gives the consumer less additional utility than the one before. This does not mean that total utility declines; four is better than three, more is better than less. However, more is better than less at a declining rate. At some point, the consumer can consume too much of a good: water becomes a noneconomic good at the point when its marginal utility becomes negative.
+
+The Law of Diminishing Marginal Utility is used to show that if a consumer has many pairs of pants (point A: 6 pairs of pants, 1 shirt), she is willing to trade 3 pairs of pants for one additional shirt (point B: 3 pairs of pants, 2 shirts). On the other hand, if the consumer had 5 shirts and only one pair of pants (point C), she would be willing to give up two shirts for the second pair of pants (point D: 2 pairs of pants and 3 shirts). A consumer's willingness to trade one good for another depends on how much of each good he or she has. The first unit provides the higher level of satisfaction, and consumption of subsequent units provide less additional utility, as shown in Figure \@ref(fig:dim-mar-utility).
+
+```{r dim-mar-utility, fig.width = 6, out.width = "90%", fig.cap = "Law of diminishing marginal utility"}
+bz_curves <- structure(list(Shirt = c(5L, 3L, 2L, 1L), 
+                            Pant = c(1L, 2L, 3L, 
+                                     6L)), 
+                       .Names = c("Shirt", "Pant"), 
+                       class = "data.frame", 
+                       row.names = c(NA, 
+                                     -4L))
+
+bezier::bezier(t = seq(0,1,length.out = 50), bz_curves) %>% 
+  as_tibble() %>% 
+  ggplot2::ggplot(aes(y = V1, x = V2)) + 
+  ggplot2::geom_line(size = 1.2) +
+  xlab("Pairs of pants") + 
+  ylab("Number of shirts")
+```
+
+
+> _"Will you ever trade diamond for water? Yes!"_ --- The Diamond-Water paradox
+
+Law of Diminishing Marginal Utility: \newline Marginal utility declines as more of a good or service is consumed during a given time period.
+
+The law of diminishing marginal utility implies that consumers will not spend all of their income on one good, because the marginal utility of continuing to buy the same good declines. Instead, consumers use their money to buy a variety of goods.
+
+## Price and income effects
+
+
+## Law of Demand
+
+### Demand
+
+"Demand" and "supply" are the twin driving forces of the market economy. Demand is not just about measuring what people want; for economists, it refers to the amount of a good or service that people are both willing and able to buy. The demand curve measures the relationship between the price of a good and the amount of it demanded. Usually, as the price rises, fewer people are willing and able to buy it; in other words, demand falls (but see giffen goods, normal goods and inferior goods). When demand changes, economists explain this in one of two ways. A movement along the demand curve occurs when a price change alters the quantity demanded; but if the price were to go back to where it was before, so would the amount demanded. A shift in the demand curve occurs when the amount demanded would be different from what it was previously at any chosen price, for example, if there is no change in the market price, but demand rises or falls. The slope of the demand curve indicates the **elasticity of demand**. 
+
+Policymakers seek to manipulate aggregate demand to keep the economy growing as fast as is possible without pushing up inflation. Keynesians try to manage demand through fiscal policy; monetarists prefer to use the money supply. Neither approach has been especially successful in practice, particularly when attempting to manage short-term demand through fine tuning.
+
+**Demand curve**
+
+A graph showing the relationship between the price of a good and the amount of demand for it at different prices.
+
+```{r demand-curve1, fig.width=7, fig.height=5, out.width="105%", eval=TRUE, fig.cap="Demand and supply curves showing change in demand", echo=FALSE, eval = TRUE}
+
+# curve1 and curve2 should be data.frames with an x and y column
+# For instance, as_data_frame(Hmisc::bezier(c(1, 8, 9), c(1, 5, 9)))
+#
+curve_intersect <- function(curve1, curve2) {
+  # Approximate the functional form of both curves
+  curve1_f <- approxfun(curve1$x, curve1$y, rule = 2)
+  curve2_f <- approxfun(curve2$x, curve2$y, rule = 2)
+
+  # Calculate the intersection of curve 1 and curve 2 along the x-axis
+  point_x <- uniroot(function(x) curve1_f(x) - curve2_f(x), 
+                     c(min(curve1$x), max(curve1$x)))$root
+
+  # Find where point_x is in curve 2
+  point_y <- curve2_f(point_x)
+
+  # All done!
+  return(list(x = point_x, y = point_y))
+}
+
+supply <- Hmisc::bezier(c(1, 8, 9),
+                        c(1, 5, 9)) %>%
+  data.frame()
+
+demand <- Hmisc::bezier(c(1, 3, 9),
+                        c(9, 3, 1)) %>%
+  as_data_frame()
+
+demand1 <- Hmisc::bezier(c(1, 3, 9),
+                        c(9, 3, 1)) %>%
+  as_data_frame()
+
+demand2 <- Hmisc::bezier(c(3, 5, 11),
+                         c(11, 5, 3)) %>%
+  data.frame()
+
+# Calculate the intersections of the two curves
+intersections <- bind_rows(curve_intersect(supply, demand1),
+                           curve_intersect(supply, demand2))
+
+plot_labels <- data_frame(label = c("S", "D[1]", "D[2]"),
+                          x = c(8, 1, 5),
+                          y = c(8, 8, 8))
+
+ggplot(mapping = aes(x = x, y = y)) + 
+  geom_path(data = supply, color = "#0073D9", size = 1) + 
+  geom_path(data = demand, color = "#FF4036", size = 1, linetype = "dashed") + 
+  geom_path(data = demand2, color = "#FF4036", size = 1) + 
+  geom_segment(data = intersections, 
+               aes(x = x, y = 0, xend = x, yend = y), lty = "dotted") +
+  geom_segment(data = intersections, 
+               aes(x = 0, y = y, xend = x, yend = y), lty = "dotted") + 
+  geom_text(data = plot_labels,
+            aes(x = x, y = y, label = label), parse = TRUE) +
+  annotate("segment", x = 3.5, xend = 4.5, y = 6, yend = 7,
+           arrow = arrow(length = unit(1, "lines")), colour = "grey50") +
+  geom_point(data = intersections, size = 3) +
+  scale_x_continuous(expand = c(0, 0), breaks = intersections$x,
+                     labels = expression(Q[1], Q[2])) +
+  scale_y_continuous(expand = c(0, 0), breaks = intersections$y,
+                     labels = expression(P[1], P[2])) +
+  labs(x = "Quantity", y = "Price",
+       title = "Rightward shift in demand",
+       subtitle = "As demand increases, so does price") +
+  coord_equal() +
+  theme_classic() + 
+  theme(plot.title = element_text(size = rel(1.3)))
+```
+
+
+## Law of Supply
+
+### Supply
+
+
+## Economics of production
+
+It describes the physical relationship between inputs and outputs, and describes the economics of transforming inputs into products; resources into goods. 
+
+### The production function
+
+The production of goods and services is a logical place to begin studying the economics of agricultural production. During the production process, firms, or producers, combine inputs into outputs for sale to consumers. The process can be quite complex. Then follows the production activities undertaken by firms. The discussion then shifts to the behavior of consumers, or households. All of this leads to consideration of the interactions of consumers and producers in markets. **Production** is the process of producing goods and services. This process requires scarce resources.
+
+Inputs have several different names:
+Inputs = factors = factors of production = resources = A, L, K, M
+
+> \textbf{A}: Land (Natural and biological resources, climate.) \newline \textbf{L}: Labor (Human resources.) \newline \textbf{K}: Capital (Manufactured resources, which include buildings, machines, tools, and equipment.) \newline \textbf{M}: Management (The entrepreneur, or individual, who combines the other resources into inputs.)
+
+<!-- **Wheat production in Bhairahawa, Rupandehi** -->
+
+<!-- Consider a wheat producer in Bhairahawa, Rupandehi, a leading wheat producing district in Nepal. Let $Y$ = output = wheat, measured in tons (ton), where $f$ = the mathematical relationship between inputs and output: -->
+
+<!-- $$Output = f(Inputs)$$ -->
+
+<!-- $$Y = f(K, L, A, M)$$ -->
+
+<!-- The relationship is fairly complex, with multiple variable inputs. Thus, to reduce complexity let us consider the relationship between inputs and outputs, and concentrate on just one input: The capital. In this case, the choice of capital is entirely arbitrary, since any one of the inputs could fit into the example. -->
+
+<!-- > "The \textit{ceteris paribus} assumption isolates the relationship between output and the single input, capital." -->
+
+<!-- A mathematician writes an equation to say that the variable Y is related to, or depends on other variables $x_1, x_2, x_3, ..., x_n$. The equation is written as: -->
+
+<!-- $$Y = f(x_1, x_2, x_3, ..., x_n)$$ -->
+
+<!-- Following mathematical convention, the variable $x_1$ to the left of the vertical bar is free to vary, but all variables to the right of the vertical bar, in this case, $x_2, ..., x_n$ , are held constant: -->
+
+<!-- $$Y = f(x_1|x_2, ..., x_n)$$ -->
+
+<!-- We, can rewrite the example equation that of wheat production in Bhairahawa for varying just one input ($K$) to the left of the vertical bar as follows. Real physical production is a complicated biological process. Therefore, one input at a time must be isolated: -->
+
+<!-- $$Y = f(K | L, A, M)$$ -->
+
+<!-- This equation is what mathematicians refer to as a function. Economists provide a more descriptive term by calling it a **Production Function.** -->
+
+<!-- The production function is a purely physical relationship used to describe the quantity of inputs required to produce a given quantity of output. Since there are no money (Rupees) values associated with it, it is not an economic relationship. -->
+
+<!-- To determine the optimal use of the fertilizer nitrogen on wheat fields, agronomists can run controlled experiments to determine what happens to wheat yields as the amount of nitrogen is changed: either increased or decreased. They do this type of experiment on test plots, or small wheat fi elds that are typically adjacent to each other to keep constant the weather, growing conditions, and soil conditions across all of the plots. The idea behind the controlled experiment is to hold all inputs constant except for nitrogen, and measure how the different levels of nitrogen ($N$) affect the wheat yields. The wheat production function would look like this: -->
+
+<!-- $$Y = f(N, L, K, M, A)$$ -->
+
+<!-- > Think of what can be closest syntactic production factors replacements for $L, K, M, A$ -->
+
+<!-- > How about land, labor, machinery and seed? -->
+
+<!-- To isolate the relationship between nitrogen and wheat yields, the agronomists (or other biophysical scientists) will hold constant all inputs other than the one that they are isolating, in this case nitrogen. -->
+
+<!-- $$Y = f(N | L, K, M, A)$$ -->
+
+<!-- This relationship is highly important, since too little nitrogen means the yields will be lower than the potential, and too much nitrogen will "burn" the crop, causing smaller yields. Figure \@ref(fig:nitrogen-wheat) shows the connection between nitrogen applications and wheat yields. -->
+
+<!-- ```{r nitrogen-wheat, fig.width=7, fig.height=5, out.width="90%", eval=TRUE, fig.cap="Relationship between Nitrogen application and Yield", echo=FALSE, eval = TRUE} -->
+<!-- ## bezier control points -->
+
+<!-- # try different forms of lines, same two values for x-es results in unpredictable shapes -->
+<!-- # poi <- lapply(5:8, function(x) matrix(c(10, 2, x, 1, 2, 8), ncol = 2, nrow = 3, byrow = TRUE)) -->
+<!-- # poi[c(1:2)] -->
+
+<!-- poi <- lapply(5:8, function(x) matrix(c(10, -4, x, 1, 6, 8, 4, 4), ncol = 2, nrow = 4, byrow = TRUE)) -->
+
+<!-- # three points(nrow=3), 1D(ncol=1) bezier curve -->
+<!-- map_df(poi[c(4)], .f = ~ bezier::bezier(t = seq(0, 2, length.out = 100), p = .x) %>% -->
+<!--   as_tibble()) %>%  -->
+<!--   ggplot(aes(V1, V2)) +  -->
+<!--     geom_line() +  -->
+<!--     xlab("Nitrogen") +  -->
+<!--     ylab("Yield") -->
+<!-- # change the axis tick labels? -->
+<!-- ``` -->
+
+
+<!-- ### Concept of optimum production -->
+
+<!-- The point of maximum physical wheat yield (N\*) is not always the optimal economic wheat yield. This is because nitrogen is a scarce resource, and costs money to purchase. In fact, fertilizer is one of the major costs of production for farmers in most agricultural regions in the United States. If nitrogen were free, then the optimal application to a wheat field would always be N\* in Figure \@ref(fig:nitrogen-wheat) , since this is the level of nitrogen that maximizes production.  -->
+
+<!-- However, since it costs money to purchase and use fertilizer, the farmer will stop applying it at a point to the left of N\*. Finding the optimal amount of nitrogen to apply requires application of economic principles. Economic reasoning will help determine the exact point where the benefits of using N minus the costs are maximized. For now, note that producers will not maximize production, because it costs too much. Instead, they will maximize profits. -->
+
+<!-- The study of production functions applies to many situations, events, and circumstances. A student studying for an exam is involved with a kind of production. In this situation output ($= Y$) might be test performance, or grade, and the input ($= X$) is the number of hours that the student studies. The output of this production process will depend on how many hours the student studies and other factors, such as intelligence and previous knowledge. However, if the student constantly drinks coffee (or Mountain Dew) and stays up all night, the test performance may actually fall. Too much studying can result in too little sleep, which in turn results in poor test performance. Thus, the relationship between the number of hours studied and the grade on a test will have the same general shape as the graphs for wheat production. Because of differences in intelligence, preparation, alertness, and academic ability, each individual student will have a different "production function" for the examination. -->
+
+<!-- ### Profit maximization -->
+
+<!-- In general, every producer tries to maximize their profits. Because, any business owner who does not pay attention to potential profits is unlikely to remain in business for long in a market economy. Profit is denoted by greek letter pi ($\pi$) -->
+
+<!-- $$\pi = TR - TC$$ -->
+<!-- Profits are defined as total revenue (TR) minus total cost (TC). -->
+
+<!-- Total revenue is  simply the dollars earned from the sale of a good. Let the quantity of a good sold be given by $Q$ units, and the price of the good by $P$ dollars per unit. Then, the total revenue earned by the producing firm is equal to $TR = P*Q$. The units for total revenue are in Rupees, since $P$ is in (Rupees/unit) and $Q$ is in (kgs, tons, dozens, or some other appropriate measure), when $P$ is multiplied times $Q$, the units cancel and $TR$ is in (Rupees). Total costs represent the costs of production of the good, and are also in Rupees units. Producers of goods and services alter their production and marketing activities in a neverending effort to maximize profits. The ability of business firms to make changes in how they produce and sell goods depends on the product that they produce. If the product is corn, major adjustments are possible at least once each year with a small number of changes occurring throughout the year. If the product is walnuts, major production decisions come only once in a generation, or even longer, but a small number of minor adjustments are possible during each growing season. If the product is lettuce grown in greenhouses, major adjustments occur almost continually. Time and timing are the critical issues. Length of time is of great importance in making profit-maximizing decisions. -->
+
+### Economic concept of time periods
+
+In economics, these terms have specific meanings, but not meanings related to a specific length of time such as minutes, days, or weeks. The length of the long run, the short run, and the immediate run depend on the specific situation.
+
+The **Immediate Run** is a period of time during which all of the inputs available to a producer are fixed and cannot be changed. The producer cannot change the quantity of any input. A wheat producer purchases land, labor, seed, machinery, fertilizer, and chemicals. After the planting season, the producer is unlikely to be able to alter or use either more or less of the quantity of these inputs to affect the progress of the crop. This situation defines the immediate run.
+
+As time passes, the producer will have more flexibility to change the quantities of inputs. In a three-month period, this producer is able to alter the number of hours of work hired, but cannot change the number of acres of land that are in production or, after a certain period, add more fertilizer. This situation is called the **Short Run** , defined as a period when some inputs are fixed (the quantities of inputs used cannot be altered) and some inputs are variable (the quantities of inputs can be changed).
+
+The quantities of some agricultural inputs are not easy to change in the short run. Land is a common example. Most producers cannot acquire more land in a short length of time. Therefore, the acres of land available to one producer remain fixed in the Short Run (SR). Similarly, machinery and equipment (combines, tractors, and plows) are very expensive, and many producers cannot rapidly increase or decrease the number of these inputs. During that period when a farmer is unable to alter the quantity of inputs, the inputs are fixed, and the farmer is in the Short Run (SR). However, in the short run, some inputs are variable. For example, the producer could alter the level of chemicals, fertilizer, labor, or management. In the **Long Run** (LR), all inputs are variable.
+
+Over long run, producer may buy or sell machinery or land. They can also adjust the size of their farm. the long run is however long it takes to adjust the levels of inputs. This differs from farm to farm and from business to business.
+
+### Inputs
+
+$\textbf{Fixed input}$ = An input whose quantity does not vary with the level of output.
+
+$\textbf{Variable input}$ = An input that when changed affects the level of output.
+
+### Physical production relationships
+
+Understanding the production function requires discussion of transforming inputs into outputs. Suppose a wheat farmer in Bhairahawa uses capital, labor, land, and management to produce corn. Recall the generalized production function for his farming activity:
+
+$$Y = f(L, K, A, M)$$
+
+Understanding the impact of labor on corn output requires holding the levels of all other inputs constant.
+
+$$Y = f(L|K, A, M)$$
+
+This leads to an understanding of production efficiency, explained in the next section.
+
+#### Constant, increasing, decreasing, and negative returns 
+
+The level of inputs as reported in the production function determines the level of output (the production function describes the physical relationship between inputs and output). The production process can take on different forms: Constant Returns, Increasing Returns, Decreasing Returns, and Negative Returns . The word _returns_ refers to changes in output that occur as quantities of inputs increase incrementally. Think of increasing the level of inputs by one unit at a time, and measuring how output responds to each change. This incremental way of approaching a problem is one cornerstone of "**thinking like an economist.**" In a production process characterized by Constant Returns , each additional unit of input is equally as productive as all other units of input.
+
+**Constant Returns**: When each additional unit of input added to the production process yields a constant level of output relative to the previous unit of input. Output increases at a constant rate. Table \@ref(tab:constant-returns) and Figure \@ref(fig:constant-returns1) show physical production relationship with constant rate of returns.
+
+```{r constant-returns, echo=FALSE}
+
+ppr_constant <- readxl::read_xlsx("./../data/concepts_of_economics.xlsx", 
+                               sheet = "ppr_constant", col_names = TRUE)
+# colnames(ppr_increasing)
+# c(colnames(ppr_increasing)[1:2], "$\\delta Y/ \\delta X$")
+ppr_constant %>% 
+  mutate_at(.vars = vars(`Added output (\\\\delta Y/ \\\\delta X)`), function(x) {
+    kableExtra::cell_spec(x, "latex", bold = T, color = kableExtra::spec_color(x, end = 0.8),
+                          font_size = kableExtra::spec_font_size(x))
+    }) %>%
+knitr::kable(col.names = c(colnames(.)[1:2], "Added output $ \\newline (\\delta Y/ \\delta X)$"), 
+             format = "latex", caption = "Physical production relationship: constant rate of returns",
+             escape = F, booktabs = T, linesep = "", align = "c") %>% 
+  kableExtra::kable_styling(position = "left", full_width = FALSE) %>% 
+  kableExtra::column_spec(1:3, width = "10em")
+```
+
+
+```{r constant-returns1, fig.width=7, fig.height=5, fig.cap="Wheat yield: constant returns", echo=FALSE, eval=TRUE, out.width="90%"}
+
+ppr_constant %>% 
+  ggplot(aes(y = `Y (Output; wheat yield)`, x = `X (Inputs; planting density)`)) + geom_line(size = 1.3)
+```
+
+
+**Increasing Returns**: When each additional unit of input added to the production process yields an increasing level of output relative to the previous unit of input. Output increases at an increasing rate. Table \@ref(tab:increasing-returns) and Figure \@ref(fig:increasing-returns1) show physical production relationship with increasing rate of returns.
+
+**Decreasing Returns**: When each additional unit of input added to the production process yields less additional output relative to the previous unit of input. Output increases at a decreasing rate. Table \@ref(tab:decreasing-returns) and Figure \@ref(fig:decreasing-returns1) show physical production relationship with decreasing rate of returns.
+
+**Negative Returns**: When each additional unit of input added to the production process results in lower total output relative to the previous unit of input. Output decreases. Table \@ref(tab:negative-returns) and Figure \@ref(fig:negative-returns1) show physical production relationship with negative rate of returns.
+
+```{r increasing-returns, echo=FALSE}
+
+ppr_increasing <- readxl::read_xlsx("./../data/concepts_of_economics.xlsx", 
+                               sheet = "ppr_increasing", col_names = TRUE)
+# colnames(ppr_increasing)
+# c(colnames(ppr_increasing)[1:2], "$\\delta Y/ \\delta X$")
+ppr_increasing %>% 
+  mutate_at(.vars = vars(`Added output (\\\\delta Y/ \\\\delta X)`), function(x) {
+    kableExtra::cell_spec(x, "latex", bold = T, color = kableExtra::spec_color(x, end = 0.8),
+                          font_size = kableExtra::spec_font_size(x))
+    }) %>%
+knitr::kable(col.names = c(colnames(.)[1:2], "Added output $ \\newline (\\delta Y/ \\delta X)$"), 
+             format = "latex", caption = "Physical production relationship: increasing rate of returns",
+             escape = F, booktabs = T, linesep = "", align = "c") %>% 
+  kableExtra::kable_styling(position = "left", full_width = FALSE) %>% 
+  kableExtra::column_spec(1:3, width = "10em")
+
+```
+
+
+```{r increasing-returns1, fig.width=7, fig.height=5, fig.cap="Wheat yield: increasing returns", echo=FALSE, eval=TRUE, out.width="90%"}
+
+ppr_increasing %>% 
+  ggplot(aes(y = `Y (Output; wheat yield)`, x = `X (Inputs; planting density)`)) + geom_line(size = 1.3)
+```
+
+
+```{r decreasing-returns, echo=FALSE}
+
+ppr_decreasing <- readxl::read_xlsx("./../data/concepts_of_economics.xlsx", 
+                               sheet = "ppr_decreasing", col_names = TRUE)
+# colnames(ppr_decreasing)
+# c(colnames(ppr_increasing)[1:2], "$\\delta Y/ \\delta X$")
+ppr_decreasing %>% 
+  mutate_at(.vars = vars(`Added output (\\\\delta Y/ \\\\delta X)`), function(x) {
+    kableExtra::cell_spec(x, "latex", bold = T, color = kableExtra::spec_color(x, end = 0.8),
+                          font_size = kableExtra::spec_font_size(x))
+    }) %>%
+knitr::kable(col.names = c(colnames(.)[1:2], "Added output $ \\newline (\\delta Y/ \\delta X)$"), 
+             format = "latex", caption = "Physical production relationship: decreasing rate of returns",
+             escape = F, booktabs = T, linesep = "", align = "c") %>% 
+  kableExtra::kable_styling(position = "left", full_width = FALSE) %>% 
+  kableExtra::column_spec(1:3, width = "10em")
+```
+
+
+```{r decreasing-returns1, fig.width=7, fig.height=5, fig.cap="Wheat yield: decreasing returns", echo=FALSE, eval=TRUE, out.width="90%"}
+
+ppr_decreasing %>% 
+  ggplot(aes(y = `Y (Output; wheat yield)`, x = `X (Inputs; planting density)`)) + geom_line(size = 1.3)
+```
+
+
+```{r negative-returns, echo=FALSE}
+ppr_negative <- readxl::read_xlsx("./../data/concepts_of_economics.xlsx", 
+                               sheet = "ppr_negative", col_names = TRUE)
+# colnames(ppr_negative)
+# c(colnames(ppr_increasing)[1:2], "$\\delta Y/ \\delta X$")
+ppr_negative[,] %>% 
+  mutate_at(.vars = vars(`Added output (\\\\delta Y/ \\\\delta X)`), function(x) {
+    kableExtra::cell_spec(x, "latex", bold = T, color = kableExtra::spec_color(x, end = 0.8),
+                          font_size = kableExtra::spec_font_size(x))
+    }) %>%
+knitr::kable(col.names = c(colnames(.)[1:2], "Added output $ \\newline (\\delta Y/ \\delta X)$"), 
+             format = "latex", caption = "Physical production relationship: negative rate of returns",
+             escape = F, booktabs = T, linesep = "", align = "c") %>% 
+  kableExtra::kable_styling(position = "left", full_width = FALSE) %>% 
+  kableExtra::column_spec(1:3, width = "10em")
+
+```
+
+
+```{r negative-returns1, fig.width=7, fig.height=5, fig.cap="Wheat yield: negative returns", echo=FALSE, eval=TRUE, out.width="90%"}
+
+ppr_negative[-1,] %>% 
+  ggplot(aes(y = `Y (Output; wheat yield)`, x = `X (Inputs; planting density)`)) + geom_line(size = 1.3)
+```
+
+
+## Productivity
+
+The relationship between inputs and output, which can be applied to individual factors of production or collectively. Labour productivity is the most widely used measure and is usually calculated by dividing total output by the number of workers or the number of hours worked. Total factor productivity attempts to measure the overall productivity of the inputs used by a firm or a country.
+
+Alas, the usefulness of productivity statistics is questionable. The quality of different inputs can change significantly over time. There can also be significant differences in the mix of inputs. Furthermore, firms and countries may use different definitions of their inputs, especially capital. That said, much of the difference in countries' living standards reflects differences in their productivity. Usually, the higher their productivity is the better, but this is not always so. In the UK during the 1980s, labour productivity rose sharply, leading some economists to talk of a "productivity miracle". Others disagreed, saying that productivity had risen because unemployment had risen - in other words, the least productive workers had been removed from the figures on which the average was calculated.
+
+There was a similar debate in the United States starting in the late 1990s. Initially, economists doubted that a productivity miracle was taking place. But by 2003, they conceded that during the previous five years the United States enjoyed the fastest productivity growth in any such period since the second world war. Over the whole period from 1995, labour productivity growth averaged almost 3% a year, twice the average rate over the previous two decades. That did not stop economists debating why the miracle had occurred.
+
+## Yield
+
+The annual income from a security, expressed as a percentage of the current market price of the security. The yield on a share is its dividend divided by its price. A bond yield is also known as its interest rate: the annual coupon divided by the market price.
+
+Yield curve is a shorthand for comparisons of the interest rate on government bonds of different maturity. If investors think it is riskier to buy a bond with 15 years until it matures than a bond with five years of life, they will demand a higher interest rate (yield) on the longer-dated bond. If so, the yield curve will slope upwards from left (the shorter maturities) to right. It is normal for the yield curve to be positive (upward sloping, left to right) simply because investors normally demand compensation for the added risk of holding longer-term securities. Historically, a downward-sloping (or inverted) yield curve has been an indicator of recession on the horizon, or, at least, that investors expect the central bank to cut short-term interest rates in the near future. A flat yield curve means that investors are indifferent to maturity risk, but this is unusual. When the yield curve as a whole moves higher, it means that investors are more worried that inflation will rise for the foreseeable future and therefore that higher interest rates will be needed. When the whole curve moves lower, it means that investors have a rosier inflationary outlook.
+
+Even if the direction (up or down) of a yield curve is unchanged, useful information can be gleaned from changes in the spreads between yields on bonds of different maturities and on different sorts of bonds with the same maturity (such as government bonds versus corporate bonds, or thinly traded bonds versus highly liquid bonds).
+
+Comparing the performance of bonds and shares is done through **yield gap**. The gap is defined as the average yield on equities minus the average yield on bonds. Because shares are usually riskier investments than bonds, you might expect them to have a higher yield. In practice, the yield gap is often negative, with bonds yielding more than equities. This is not because investors regard equities as safer than bonds (see equity risk premium). Rather, it is that they expect most of the benefit from buying shares to come from an increase in their price (capital appreciation) rather than from dividend payments. Bond investors usually expect more of their gains to come from coupon payments. They also worry that inflation will erode the real value of future coupons, making them value current payments more highly than those due in years to come. Moreover, the usefulness of the dividend yield as a guide to the performance of shares has declined since the early 1990s, as increasingly companies have chosen to return cash to shareholders by buying back their own shares rather than paying out bigger dividends.
+
+## Marginal concept of cost and revenue
+
+The difference made by one extra unit of something. Marginal revenue is the extra revenue earned by selling one more unit of something. The marginal price is how much extra a consumer must pay to buy one extra unit. Marginal utility is how much extra utility a person gets from consuming (or doing) an extra unit of something. The marginal product of labour is how much extra output a firm would get by employing an extra worker, or by getting an existing worker to put in an extra hour on the job. The marginal propensity to consume (or to save) measures by how much a household's consumption (savings) would increase if its income rose by, say, $1. The marginal tax rate measures how much extra tax you would have to pay if you earned an extra dollar. The marginal cost (or whatever) can be very different from the average cost (or whatever), which simply divides total costs (or whatever) by the total number of units produced (or whatever). A common finding in microeconomics is that small incremental changes can matter enormously. In general, thinking "at the margin" often leads to better economic decision-making than thinking about the averages. Alfred marshall, the father of neo-classical economics, based many of his theories of economic behaviour on marginal rather than average behaviour. For instance, givencertain plausible assumptions, a profit-maximising firm will increase production up to the point where marginal revenue equals marginal cost. This is because if marginal revenue exceeded marginal cost, the firm could increase its profit by producing an extra unit of output. Alternatively, if marginal cost exceeded marginal revenue, the firm could increase its profit by producing fewer units of output. In all walks of life, a basic rule of rational economic decision-making is: do something only if the marginal utility you get from it exceeds the marginal cost of doing it.
+
+## Price
+
+In equilibrium, what balances supply and demand. The price charged for something depends on the tastes, income and elasticity of demand of customers. It depends on the amount of competition in the market. Under perfect competition, all firms are price takers. Where there is a monopoly, or firms have some market power, the seller has some control over the price, which will probably be higher than in a perfectly competitive market. By how much more will depend on how much market power there is, and on whether the firm(s) with the market power are committed to profit maximisation. In some cases, firms may charge less than the profit-maximising price for strategic or other reasons (called predatory pricing).
+
+## Diminishing returns
+
+The more you have, the smaller is the extra benefit you get from having even more; also known as diseconomies of scale (see economies of scale). For instance, when workers have a lot of capital giving them a little more may not increase their productivity anywhere near as much as would giving the same amount to workers who currently have little or no capital. This underpins the catch-up effect, whereby there is (supposedly) convergence between the rates of growth of developing countries and developed ones. In the new economy, some economists argue, capital may not suffer from diminishing returns, or at least the amount of diminishing will be much smaller. There may even be ever increasing returns.
+
+## Factors of production
+
+**Capital**
+
+Money or assets put to economic use, the life-blood of capitalism. Economists describe capital as one of the four essential ingredients of economic activity, the factors of production, along with land, labour and enterprise. Production processes that use a lot of capital relative to labour are capital intensive; those that use comparatively little capital are labour intensive. Capital takes different forms. A firm's assets are known as its capital, which may include fixed capital (machinery, buildings, and so on) and working capital (stocks of raw materials and part-finished products, as well as money, that are used up quickly in the production process). Financial capital includes money, bonds and shares. human capital is the economic wealth or potential contained in a person, some of it endowed at birth, the rest the product of training and education, if only in the university of life. The invisible glue of relationships and institutions that holds an economy together is its social capital.
+
+**Land**
+
+One of the factors of production, along with labour, capital and enterprise. Pending colonisation of the moon, it is in fairly fixed supply. Marginal increases are possible by reclaiming land from the sea and cutting down forests (which may impose large economic costs by damaging the environment), but the expansion of deserts may slightly reduce the amount of usable land. Owners earn money from land by charging rent.
+
+**Labor**
+
+One of the factors of production, with land, capital and enterprise. Among the things that determine the supply of labour are the number of able people in the population, their willingness to work, labour laws and regulations, and the health of the economy and firms. demand for labour is also affected by the health of the economy and firms, labour laws and regulations, as well as the price and supply of other factors of production.
+
+In a perfect market, wages (the price of labour) would be determined by supply and demand. But the labour market is often far from perfect. Wages can be less flexible than other prices; in particular, they rarely fall even when demand for labour declines or supply increases. This wage rigidity can be a cause of unemployment.
+
+**Enterprise**
+
+An entrepreneur is somebody who has the idea and enterprise to mix together the other factors of production to produce something valuable. An entrepreneur must be willing to take a risk in pursuit of a profit.
+
+## Commodity
+
+A comparatively homogeneous product that can typically be bought in bulk. It usually refers to a raw material - oil, cotton, cocoa, silver - but can also describe a manufactured product used to make other things, for example, microchips used in personal computers. Commodities are often traded on commodity exchanges. On average, the price of natural commodities has fallen steadily in real terms in defiance of some predictions that growing consumption of non-renewables such as copper would force prices up. At times the oil price has risen sharply in real terms, most notably during the 1970s, but this was caused not by the exhaustion of limited supplies but by rationing by the opec cartel, or war, or fear of it, particularly in the oil-rich Middle East.
+
+
+## Market
+
+**Competition**
+
+The more competition there is, the more likely are firms to be efficient and prices to be low. Economists have identified several different sorts of competition. Perfect competition is the most competitive market imaginable in which everybody is a price taker. Firms earn only normal profits, the bare minimum profit necessary to keep them in business. If firms earn more than this (excess profits), other firms will enter the market and drive the price level down until there are only normal profits to be made. Most markets exhibit some form of imperfect or monopolistic competition. There are fewer firms than in a perfectly competitive market and each can to some degree create barriers to entry. So firms can earn some excess profits without a new entrant being able to compete to bring prices down. The least competitive market is a monopoly, dominated by a single firm that can earn substantial excess profits by controlling either the amount of output in the market or the price (but not both). In this sense it is a price setter. When there are few firms in a market (oligopoly), they have the opportunity to behave as a monopolist through some form of collusion (see cartel). A market dominated by a single firm does not necessarily have monopoly power if it is a contestable market. In such a market, a single firm can dominate only if it produces as efficiently as possible and does not earn excess profits. If it becomes inefficient or earns excess profits, another more efficient or less profitable firm will enter the market and dominate it instead.
+
+1. Perfect competition
+
+The most competitive market imaginable. Perfect competition is rare and may not even exist. It is so competitive that any individual buyer or seller has a negligible impact on the market price. Products are homogeneous. information is perfect. Everybody is a price taker. firms earn only normal profit, the bare minimum profit necessary to keep them in business. If firms earn more than that (excess profits), the absence of barriers to entry means that other firms will enter the market and drive the price level down until there are only normal profits to be made. Output will be maximised and price minimised. Contrast with monopolistic competition, oligopoly and, above all, monopoly.
+
+2. Monopolistic competition
+
+Somewhere between perfect competition and monopoly, also known as imperfect competition. It describes many real-world markets. Perfectly competitive markets are extremely rare, and few firms enjoy a pure monopoly; oligopoly is more common. In monopolistic competition, there are fewer firms than in a perfectly competitive market and each can differentiate its products from the rest somewhat, perhaps by advertising or through small differences in design. These small differences form barriers to entry. As a result, firms can earn some excess profits, although not as much as a pure monopoly, without a new entrant being able to reduce prices through competition. Prices are higher and output lower than under perfect competition.
+
+- Barriers to entry (or exit)
+	- How firms keep out competition - an important source of incumbent advantage. There are four main categories of barriers. They are:
+
+	- 1. A firm may own a crucial resource, such as an oil well, or it may have an exclusive operating licence, for instance, to broadcast on a particular radio wavelength.
+	- 2. A big firm with economies of scale may have a significant competitive advantage because it can produce a large output at lower costs than can a smaller potential rival.
+	- 3. An incumbent firm may make it hard for a would-be entrant by incurring huge sunk costs, spending lots of money on things such as advertising, which any rival must match to compete effectively but which have no value if the attempt to compete should fail.
+	- 4. Powerful firms can discourage entry by raising exit costs, for example, by making it an industry norm to hire workers on long-term contracts, which make firing an expensive process.
+
+3. Monopoly
+
+When the production of a good or service with no close substitutes is carried out by a single firm with the market power to decide the price of its output. Contrast with perfect competition, in which no single firm can affect the price of what it produces. Typically, a monopoly will produce less, at a higher price, than would be the case for the entire market under perfect competition. It decides its price by calculating the quantity of output at which its marginal revenue would equal its marginal cost, and then sets whatever price would enable it to sell exactly that quantity.
+
+In practice, few monopolies are absolute, and their power to set prices or limit supply is constrained by some actual or potential near-competitors (see monopolistic competition). An extreme case of this occurs when a single firm dominates a market but has no pricing power because it is in a contestable market; that is, if it does not operate efficiently, a more efficient rival firm will take its entire market away. Antitrust policy can curb monopoly power by encouraging competition or, when there is a natural monopoly and thus competition would be inefficient, through regulation of prices. Furthermore, the mere possibility of antitrust action may encourage a monopoly to self-regulate its behaviour, simply to avoid the trouble an investigation would bring.
+
+4. Oligopoly
+
+When a few firms dominate a market. Often they can together behave as if they were a single monopoly, perhaps by forming a cartel. Or they may collude informally, by preferring gentle non-price competition to a bloody price war. Because what one firm can do depends on what the other firms do, the behaviour of oligopolists is hard to predict. When they do compete on price, they may produce as much and charge as little as if they were in a market with perfect competition.
+
+**Monopsony**
+
+A market dominated by a single buyer. A monopsonist has the market power to set the price of whatever it is buying (from raw materials to labour). Under perfect competition, by contrast, no individual buyer is big enough to affect the market price of anything.
+
+## Diversification
+
+Not putting all your eggs in one basket. Investors are encouraged to do this by modern portfolio theory, as holding several different shares and other assets helps to reduce risk. At the sharp end of business, however, diversification is somewhat out of fashion. Economic studies of diversifying corporate mergers have found that these often hurt the shareholders of the acquiring firm; by contrast, diversified firms that have sold off non-core businesses have typically made their shareholders much better off.
+
+## Equilibrium
+
+When supply and demand are in balance. At the equilibrium price, the quantity that buyers are willing to buy exactly matches the quantity that sellers are willing to sell. So everybody is satisfied, unlike when there is disequilibrium. In classical economics, it is assumed that markets always tend towards equilibrium and return to it in the event that something causes a temporary disequilibrium. general equilibrium is when supply and demand are balanced simultaneously in all the markets in an economy. keynes questioned whether the economy always moved to equilibrium, for instance, to ensure full employment.
+
+## GDP
+
+Gross domestic product, a measure of economic activity in a country. It is calculated by adding the total value of a country's annual output of goods and services. GDP = private consumption + investment + public spending + the change in inventories + (exports - imports). It is usually valued at market prices; by subtracting indirect tax and adding any government subsidy, however, GDP can be calculated at factor cost. This measure more accurately reveals the income paid to factors of production. Adding income earned by domestic residents from their investments abroad, and subtracting income paid from the country to investors abroad, gives the country's gross national product (GNP). 
+
+The effect of inflation can be eliminated by measuring GDP growth in constant real prices. However, some economists argue that hitting a nominal GDP target should be the main goal of macroeconomic policy. This is because it would remind policymakers to take into account the effect of their decisions on inflation, as well as on growth. 
+
+GDP can be calculated in three ways. The income method adds the income of residents (individuals and firms) derived from the production of goods and services. The output method adds the value of output from the different sectors of the economy. The expenditure method totals spending on goods and services produced by residents, before allowing for depreciation and capital consumption. As one person's output is another person's income, which in turn becomes expenditure, these three measures ought to be identical. They rarely are because of statistical imperfections. Furthermore, the output and income measures exclude unreported economic activity that takes place in the black economy but that may be captured by the expenditure measure.
+
+GDP is disliked as an objective of economic policy by some because it is not a perfect measure of welfare. It does not include aspects of the good life such as some leisure activities. Nor does it include economically valuable activities that are not paid for, such as parents teaching their children to read. But it does include some things that lower the quality of life, such as activities that damage the environment.
+
+## Balance of trade
+
+The total of all the money coming into a country from abroad less all of the money going out of the country during the same period. This is usually broken down into the current account and the capital account. 
+
+The current account includes:
+
+- Visible trade (known as merchandise trade in the United States), which is the value of exports and imports of physical goods;
+- Invisible trade, which is receipts and payments for services, such as banking or advertising, and other intangible goods, such as copyrights, as well as cross-border dividend and interest payments;
+- Private transfers, such as money sent home by expatriate workers;
+- Official transfers, such as international aid. 
+
+The capital account includes:
+
+- Long-term capital flows, such as money invested in foreign firms, and profits made by selling those investments and bringing the money home;
+- Short-term capital flows, such as money invested in foreign currencies by international speculators, and funds moved around the world for business purposes by multinational companies. These short-term flows can lead to sharp movements in exchange rates, which bear little relation to what currencies should be worth judging by fundamental measures of value such as purchasing power parity.
+
+As bills must be paid, ultimately a country's accounts must balance (although because real life is never that neat a balancing item is usually inserted to cover up the inconsistencies). "Balance of payments crisis" is a politically charged phrase. But a country can often sustain a current account deficit for many years without its economy suffering, because any deficit is likely to be tiny compared with the country's national income and wealth. Indeed, if the deficit is caused by firms importing technology and other capital goods from abroad, which will improve their productivity, the economy may benefit. A deficit that has to be financed by the public sector may be more problematic, particularly if the public sector faces limits on how much it can raise taxes or borrow or has few financial reserves. For instance, when the Russian government failed to pay the interest on its foreign debt in August 1998 it found it impossible to borrow any more money in the international financial markets. Nor was it able to increase taxes in its collapsing economy or to find anybody within Russia willing to lend it money. That truly was a balance of payments crisis.
+
+In the early years of the 21st century, economists started to worry that the United States would find itself in a balance of payments crisis. Its current account deficit grew to over 5% of its GDP, making its economy increasingly reliant on foreign credit.
+
+## Free trade
+
+The ability of people to undertake economic transactions with people in other countries free from any restraints imposed by governments or other regulators. Measured by the volume of imports and exports, world trade has become increasingly free in the years since the second world war. A fall in barriers to trade, as a result of the general agreement on tariffs and trade and its successor, the world trade organisation, has helped stimulate this growth. The volume of world merchandise trade at the start of the 21st century was about 17 times what it was in 1950, and the world's total output was not even six times as big. The ratio of world exports to GDP had more than doubled since 1950. Of this, trade in manufactured goods was worth three times the value of trade in services, although the share of services trade was growing fast.
+
+For economists, the benefits of free trade are explained by the theory of comparative advantage, with each country doing those things in which it is comparatively more efficient. As long as each country specialises in products in which it has a comparative advantage, trade will be mutually beneficial. Some critics of free trade argue that trade with developing countries, where wages are usually lower and working hours longer than in developed countries, is unfair and will wipe out jobs in high-wage countries. They want autarky or fair trade.
+
+Real-world trade patterns sometimes seem to challenge the theory of comparative advantage. Most trade occurs between countries that do not have huge cost differences. The biggest trading partner of the United States, for instance, is Canada. Well over half the exports from France, Germany and Italy go to other european union countries. Moreover, these countries sell similar things to each other: cars made in France are exported to Germany, and German cars go to France. The main reason seems to be cross-border differences in consumer tastes. But the agricultural exports of Australia, say, or Saudi Arabia's reliance on oil, do clearly stem from their particular stock of natural resources. Also poorer countries often have more unskilled labour, so they export simple manufactures such as clothing.
+
+
+# (PART) Farm management and accounting {-}
+
+## Farm management
+
+Farm management is a systems-related professional discipline which relates to the description, construction, analysis and evaluation of farm systems of farm-household systems (Order Level 12, as described below). To a layman farm management probably means just that - a body of activities and procedures carried out by a farmer in the ongoing management of his or her farm and for which advice may be available from professional specialists in farm management.
+
+Farm management as carried out by farmers has been defined (Dillon 1980, p. 258) as 'the process by which resources and situations are manipulated by the farm manager in trying, with less than full information, to achieve his [or her] goals'.
+
+### Meaning of Farm management
+
+Farm management is the science (and art) of optimizing the use of resources in the farm component of farm-households, and of achieving the optimal functioning of these systems in relation to household-specified objectives; and since Order farm-household systems consist structurally of subsystems, farm management is also concerned with the operation of subservient subsystems of lower levels (Order Levels below 9) in such fashion as to optimize the whole-farm system. 
+But when dealing with small farms, that farm management extends also to the family or household component, thus its true scope extends to Order Level 12 systems. Sometimes, upper order levels are also the necessary considerations while making economic decisions.
+
+It is also a very pertinent branch of economics as economics is the science of making choices so as to best achieve desired objectives. It comprises making rational choices, e.g., choice of which crops to grow or to the choice between using an insecticide or using environmentally friendly integrated pest management. Aside from this wide applicability of economic analysis, financial analysis of farm, a subset of economic analysis, is the natural way in which to economic analysis is conducted. It is however restricted to matters that are of a financial or monetary nature. In some cases it may be feasible to facilitate economic analysis of possible choices by imputing money values to possible gains and losses. And in yet other cases, such as assessing the resource sustainability and environmental compatibility of alternative farm systems, it may often be infeasible to impute money values to the gains and losses of alternative choices. Decisions must then be made using economic analysis based on non-money values, intuition and judgement.
+
+### Characteristics/Features of Farm management
+
+Features of farm mangement can be drawn from the structural elements that comprise a farm-household system:
+
+1. Boundaries: The boundaries of the farm-household system set it apart from other systems and from the world at large. These boundaries are provided partly by the structural characteristics of the particular *type of farm* (small subsistence, small independent, large, commercial, ...), and partly by the purpose of analysis, i.e., to some extent they are subjective and relate to more than the simple physical boundary of the farm.
+
+2. Household: The household plays two roles: first, it provides purpose and management to its associated farm system and, second, it is the major beneficiary of its associated farm system. In its first role it provides purpose, operating objectives and management to the farm component of the farm-household system according to its broad domestic and social goals. Obviously these goals vary widely with culture, tradition and the degree of commercialisation and external influences to which the household is exposed. However, one would probably be not too far wrong in offering a generalization that the primary economic goal on most small farms is security and the primary non-economic goal is social acceptance (Clayton 1983). If this is correct, the primary objectives for the farm are, first, production of a low-risk sustainable subsistence for primary system beneficiaries; second, generation of a cash income to meet needs not directly met in the form of food and other farm-produced materials; and third, pursuit of both of these in ways which are not in conflict with local culture and tradition.
+
+3. Operating plan: The above objectives are pursued through preparation and execution of a farm operating plan. The core of this may be taken as selection of the best possible mix of agro-technical processes, activities, enterprises and fixed capital.
+
+4. Production-enabling resources: The resource pool
+
+5. Final product-generating enterprises
+
+6. Resource-generating activities: They are intended to supplement or entirely supply the resource pool
+
+7. Agro-technical processes: These are defined as systems of Order Levels 1 and 2. Processes may be of a biological or mechanical kind. They are a shorthand designation of all the potentially complex and interrelated physical and biological factors underlying production from crop or livestock species, only some of which may be economically relevant.
+
+8. Whole-farm service matrix: consists of fixed farm capital which provides a flow of services to all other elements of the system, particularly to Elements 5, 6 and 7 but it is not specific to any one of them.
+
+9. Structural (interdependence) coefficients
+
+10. Time dimension.
+
+The other broader relevant features of farm management are:
+
+1. Practical science
+    It is the practical science because concepts of farm management imparts farmer the knowledge regarding choices and economic decision making process of crop production, livestock production, and enterprise integration. It includes enabling farmer to adequately consider his/her condition -- Availability of resources, factors of production such as land, soil and environmental status that determine the productivity, volume and schedule of work, distribution of family labor, financial necessities, etc.
+
+2. Profit oriented
+    Farm management aims at maximization of return or profit on investment. Although the scale at which profit can be derived depends on several factors such as nature of enterprise (whether it is more risk prone or extractive, or is it more precautionary). A floriculture business seeks prolong the storage and production of cut-flowers. As well as, in the first place, it seeks a more profitable market where potential customers have higher buying capacity for the flower product.
+
+3. Integration of science
+    The FM has far-reaching/wide integration to other fields of sciences. Basic facts and information of applied sciences, i.e., Horticulture, agronomy, plant protection, animal husbandry, soil science have special place in running a farm enterprise. Mainly, technical efficiency and problem solving/enterpreneurial skills are acquired through subject matter expertise.
+
+4. Micro approach
+    It has a mico approach to management of farm units. A farm household on the whole is a single unit of management. Testing of and recommendations for resource are based on the farm status and suitability. With regard to availability of resources, opportunities that arise and the problem needed to be tackled, each farm is unique and therefore requires a micro-economic approach to management.
+
+5. Broader field
+    Although concepts of micro-economics have high relevance to FM, it integrates principles and practices of several disciplines in the real life scenario. Since it appreciates knowledge from many other fields of sciences, farm management specialist has to be a good learner and a broad practitioner. Thus the branch of economics suits "Jack of many trades and Master of one" principle.
+
+6. Farm unit as a whole
+    Individual farm is the unit of decision making, and the unit that has widest implication of the decision. Similarly, the farm resources availablity status of the farm that is being managed influence the most on planning and decision making process of the farm. When integrated systems are of concern, optimization of whole farm rather than a single enterprise is sought.
+
+### Farming system order level
+
+Meaning of farm management can be clearly derived from the **farming system order level** description (shown in Figure \@ref(fig:fs-order-level)).
+
+```{r fs-order-level, fig.width=8, fig.cap="Farming system order levels", echo=FALSE, out.width="100%"}
+
+knitr::include_graphics("./../images/Farming_system_levels.png")
+```
+
+
+- Order Level 1: Uni-dimensional process systems. Systems of this lowest order are of an agro-technical nature. They involve an issue or problem which for purposes of analysis or management is abstracted from the context in which it naturally or normally occurs. One example is the application of a single fertilizer element, say nitrogen (N), to a crop and consequent plant response to N in terms of crop yield Y. As noted previously, systems of this order are primarily the domain of physical scientists, but those systems which have practical relevance for farmers thereby also have an economic dimension and so fall within the scope of farm economics. Such simple single-dimensional systems are examined as processes and as input-output response relationships.
+
+- Order Level 2: Multi-dimensional process systems. Systems of this second order are also concerned with limited agro-technical relationships and again they are primarily the domain of physical scientists. They differ from Order Level 1 systems in that they take - or are defined to take - a wider and more realistic view of a subject or problem. To use the same example of fertilizer response: at Order Level 2 an agro-technical system might involve the response of plant growth or yield Y to not one but to several or a large number of input factors such as nitrogen, phosphorous, irrigation water, crop hygiene, soil tilth etc. These multi-dimensional systems too are examined as processes and as response relationships. Order Level 2 systems can be viewed as aggregations (often interactive) of constituent Order Level 1 systems.
+
+- Order Level 3: Enabling-activity systems. Systems of this order are certain enabling activities which generate an intermediate product intended for use as an input/resource by enterprises which do produce a final product. An example is offered by a legume crop turned under to provide fertility for a following (final product-generating) paddy crop. There will often be alternative ways of obtaining this resource: e.g., stripping leaves off leguminous trees, keeping cattle for their manure, or buying a bag of fertilizer. These are all enabling, resource-generating activities but only some of them, the complex ones, warrant designation as systems. They are intended to supply resources to systems of Order Levels 4 and 6.
+
+- Order Level 4: Crop systems. Systems of this order relate to the production of individual crops; but if these are primarily intended to produce inputs for other crops or livestock, they are regarded as systems of Order Level 3. On many small farms, crop and livestock enterprises produce both final products and resources.
+
+- Order Level 5: All crop systems. Systems of this order, known also as cropping systems, refer to the combined system of all the individual crops on a farm. On a farm with a single mono-crop, this Order Level 5 system will obviously be equivalent to an Order Level 3 system; but on small mixed farms there will usually be four, five, six or more different crops (of Order Levels 3 and 4) grown in some degree of combination and as many as 20 or more on the highly diversified forest-garden farms of South Asia.
+
+- Order Level 6: Animal systems. These systems relate to single-species animal enterprises or activities - e.g., dairy cows, camels, fish, ducks. They are the animal equivalent of Order Level 4 (i.e., individual crop) systems.
+
+- Order Level 7: All animal systems. These systems are the aggregation of all Order Level 6 (sub)systems on a farm. Known as livestock systems, they are the animal equivalent of Order Level 5 (i.e., all crop) systems.
+
+- Order Level 8: Resource pool. This subsystem is a conceptual device for farm-system planning in which resources and fixed-capital services required by other subsystems are 'stored' in a 'resource pool' from which they are allocated to the other subsystems (of Order Levels 1, 2, 3, 4 and 6). The resource pool is central to operation of the whole farm-household system.
+
+- Order Level 9: Farm service matrix. A system of this Order Level consists of all the fixed capital resources of a farm which are pertinent to the operation of the farm as a whole but are not assigned to the exclusive use of any particular enterprise or activity: land, fences, barns, irrigation channels and work oxen are common examples. Some of these capital items are true (sub)systems, having interdependence among their component parts (as in an irrigation storage/delivery/distribution network, a grain drying facility, an integrated network of soil conservation structures etc.). Some are only things (e.g., fences, a plough, a barn). But, in its totality, such capital is managed and manipulated as a system for the purpose of providing general services which, while not specific to them, enable the functioning of lower Order Level systems of the farm.
+
+- Order Level 10: Whole-farm systems. Systems of this Order Level consist of all the lower Order Level (sub)systems which go to make up a farm. They consolidate in a single entity all the farm fixed capital, all the operating capital, all the final-product enterprises, all the activities and all the agro-technical processes which underlie such enterprises and activities. Structuring and managing systems of this Order Level are the main tasks or focus of farm management as carried out, on the one hand, by farmers and as investigated, on the other hand, by farm management economists in their professional capacity of providing advice to farm managers, development agencies and governments.\newline The terms *farm system* and *farming system* are often used interchangeably. The practice is to use farm system to refer to the structure of an individual farm, and farming system to refer to broadly similar farm types in specific geographical areas or recommendation domains, e.g., the wet paddy farming system of West Java or the grain-livestock farming systems of Sind.
+
+- Order Level 11: Household systems. On small farms the household itself is the most dynamic and complex of all farm-level systems, although it is a social system not an agricultural one. It dominates the agricultural systems which comprise the farm component. It has two functions: as household it provides purpose and management to the farm component, and as major system beneficiary it receives and allocates system outputs to itself and other beneficiaries.
+
+- Order Level 12: Farm-household systems. These consist of two components or (sub)systems of Order Levels 10 and 11, i.e., the whole-farm system and its associated household system, respectively. The term is a very useful if not mandatory one when used to refer to the small farms of Asia. It carries an insistence that the technical analysis will amount to nothing at all unless it is applied to achieving the real needs and aspirations of the household - which might be quite a different thing from evaluating the performance of a farm system according to the subjective or preconceived ideas of agricultural technicians and economists (Chambers and Ghildyal 1985; Rhoades and Booth 1982). As the peak farm-level system, the farm-household system may be described in system terms as a goal-setting (i.e., purposeful) open stochastic dynamic system with a major aim of production from agricultural resources. These attributes are sufficient to make it also a complex system. The purposefulness of a farm-household system is ensured by its human and social involvement which enables the system to vary its goals and their means of achievement under a given environment. The openness of the farm-household system is obvious from its physical, economic and social interaction with its environment. The non-deterministic or stochastic nature of the farm-household system is guaranteed both by the free-choice capacity of its human (and, if present, animal) elements and by the stochastic nature of the environment with which it (and all its subsystems) interacts. Necessarily, a farm-household system is also dynamic by virtue of its purposefulness, openness and stochasticity which ensure that the system changes over time. Too, any farm-household system is a mixture of abstract and concrete elements or subsystems. The concrete elements are associated with the physical activities and processes that occur in the system. The abstract elements relate to the managerial and social aspects of the system.
+
+
+### Objectives of Farm management
+
+The goal is to maximize socio-economic welfare of farm families. The term 'welfare' is used broadly to include money income, sustenance food, farm-produced consumption goods and factors of production, non-material benefits such as those enabling the attainment of education and health standards, and satisfactions derived from work well done as well as from cultural and religious sources. 
+
+Whichever of these system outputs/family benefits are relevant in a particular farm situation will depend on the farm type and on the values held by the particular family - values which will normally reflect the society and cultural context in which the farm-household exists. Welfare maximization is conditional because it is constrained by resource availability and, as relevant, legal constraints and socio-cultural mores.
+
+The objective is to achieve the farm household's goals as efficiently as possible, which implies obtaining maximum possible net benefit over time from the operation of the farm system. Net benefit is measured, as appropriate, in terms of output or profit or, more broadly, as satisfaction or utility. Thus the broad objectives of farm management are: 
+
+- Efficient use of available resources and opportunities
+- Minimization of costs
+
+These broad objectives can be achieved through:
+
+- Short term strategies: Includes those programs that focus on maximization of profit during a single year. For e.g. Planning and layout, selection of crop varieties, selection of farm management tools for a single year. Achievement of short term objectives depends mainly on production inputs availability and the market opportunities. One of the important tool for meeting short term strategy is the finance, the other is labor input.
+
+- Long term strategies: An important feature of farm resources is the time dimension. Most farm resources take time to restore or recover. For example, loss in soil fertility, erosion of land, exhaustion of diversity etc are some of the factors that influence the productivity which take relatively more time for improvement of their status or revert back the negative changes. A long term strategy of farm mangement is to maximize the output from these components over the years through efficient and sustainable use. This is the basis for achievement of long term objectives.
+
+### Importance of Farm management
+
+- Increase in farm income through suitable farm adjustment
+- Techological progress
+- Industrial development of society
+- Generation of employment opportunities
+- Farm management as an education tool
+- Opportunities with foreign exchange
+- Opportunities of resource sharing among enterprises
+- Utilization of marginal resources. For e.g. slopy land utilization by pig-cum-poultry farming.
+- Improvement of living standard of farmer, and the level of satisfaction
+- Reduction in poverty
+- Increase in national income
+- To bring about agricultural revolution
+
+### Relationship of Farm management with other disciplines
+
+As a disciplinary interface to farm-level _economics_, It is obvious that other farm and family-related disciplines will be involved in systems' construction of farm mangement: _agronomy_, _animal husbandry_, _soil and water conservation/management_, _human nutrition_ etc. However, except in the case of special-purpose technical systems (e.g., when the farm-household unit is analysed in terms of nutritional or energy flows among components as discussed below), these other disciplines should play subordinate contributing roles coordinated by farm management economics as the lead discipline. since this type of higher-than-farm-level analysis will be concerned with a range of subject matter in addition to farm economics - _processing_, _marketing_, _transport_, _research_, _extension_ etc. - farm management can operate in different levels of indirect interest to farming household too.
+
+Moreover, in an integrated farming system, such as that of Nepal, farm management has close associations with other disciplines as these are of direct interest to a farmer and are subject of analysis and part of thought process in decision making. For example: 
+
+- A farmer allocates his land parcel (production factor) with the consideration of two or more outputs, which sustain complementaty enterprises in most cases, like legume crop for both farming family nutritional needs along with cereal crop providing for straw to feed livestock.
+- By carrying on parallel crop activities by growing one variety/type for the market and another for the family's own use. The first, typically a high-yielding improved variety, might be deficient in taste and storability but will generate cash. The second might be capable of long storage and possess other qualities valuable in rural but not in sophisticated urban markets.
+- Livestock kept primarily for manure production (as well as for other purposes). Growing a green manure crop serves a similar purpose. Growing and lopping the leaves from leguminous trees for paddy fertilizer is still common in Java.
+
+Nevertheless, the disciplinary basis of farm management remains economics - but economics of a special wide-ranging kind, the core of which is _production economics_ supported by other branches of economics of which marketing, resource economics, _agricultural credit_ and _data analysis_ (including operations research, econometrics and risk analysis) are probably the most important. When working with the household component, especially of small traditional farms, the most important supporting disciplines are _sociology_ and _social anthropology_.
+
+## Farm budgeting and record keeping
+
+### Farm budgeting
+
+Planning is about reviewing past performance and using the knowledge gained to make future endeavours easier and more successful. After farm planning, budgeting is undertaken. Budgeting is a method of analyzing plans for the use of agricultural resources at the command of the decision maker. Farm plan is a programme of the total farm activity of a farmer drawn up in advance. Farm plan serves as the basis of farm budgeting. Therefore farm plan can be prepared without a budget but budgeting is not possible without farm plan. Therefore the budgeting can be defined as under.
+
+- The physical aspects of farm planning when expressed in monetary terms called budgeting.
+- The expression of farm plan in monetary terms by estimation of receipts, expenses and net income is called budgeting.
+- Farm budgeting is a process of estimating costs, returns and net profit of a farm or a particular enterprise.
+- Budget is a statement of estimated income and expenditure.
+
+We will be concerned with both planning and budgeting as the budget helps us to evaluate alternative plans and select the one that is most profitable. Therefore farm planning and budgeting go side by sides.
+
+Types of farm budgeting: There are two types (methods) of farm budgeting.
+
+1. Partial budgeting: It refers to estimating costs and returns and net income of a particular enterprise. It refers to estimating the returns for a part of the business i.e. one or few activities for example, to estimate additional cost and returns from growing one kattha of rice in place of vegetable crop or to estimate additional cost and return by adopting foliar application of chemical fertilizers instead of soil application.
+
+2. Complete Budgeting: It is also called as total budgeting. It refers to preparing budget for the farm as a whole. Complete budgeting considers all the crops, livestock, methods of production and aspects of marketing in consolidated form and estimates costs and returns for the farm as a whole. Therefore complete budgeting can he specifically defined as "An estimation of the probable income and expenditure is made for the farm as a single unit of course, a complete budget is required when a farm plan is prepared for new farm or when drastic changes are suggested in the plan of the existing pattern on an established farm". Complete budgeting can be prepared for short run (annual budget) and for long run. The differences between partial and complete budgeting is presented in Table \@ref(tab:farm-budgeting).
+
+```{r farm-budgeting, echo=FALSE}
+partial_complete <- structure(list(X = 1:5, Complete.Budgeting = structure(c(5L, 
+1L, 2L, 4L, 3L), .Label = c("All the aspects like crops, livestock, machinery and other assets are considered", 
+"Both fixed and variable costs are calculated for working out costs and returns.", 
+"It requires more efforts and time for preparation.", "Net income is estimated by deleting fixed costs and costs of variable inputs from the value of the product", 
+"The whole farm is considered as one unit"), class = "factor"), 
+    X.1 = 1:5, Partial.Budgeting = structure(c(1L, 2L, 5L, 4L, 
+    3L), .Label = c("It is adopted when a minor aspect of farm organization is touched.", 
+    "It is practiced with in the existing resources structure of the farm.", 
+    "It requires relatively less efforts and time for preparation.", 
+    "Net income is estimated by deleting only cost of variable inputs from the value of the product.", 
+    "Only variable costs are considered."), class = "factor")), .Names = c("X", 
+"Complete.Budgeting", "X.1", "Partial.Budgeting"), class = "data.frame", row.names = c(NA, 
+-5L))
+
+# for wide tables use package tabu to wrap the text.
+partial_complete %>% knitr::kable(format = "latex", 
+             caption = "Difference between complete and partial budgeting",
+             col.names = c("", "Complete budgeting", "", "Partial budgeting"), booktabs = TRUE) %>% 
+  # HOLD_position does not work with this table, sth to do with caption!
+  kableExtra::kable_styling(position = "left", full_width = TRUE, 
+                            latex_options = c("striped", "hold_position")) %>% 
+  kableExtra::row_spec(0, bold = TRUE) %>% 
+  kableExtra::column_spec(c(1, 3), width = "5em")
+  
+```
+
+
+### Farm record keeping
+
+It is necessary to have sufficient knowledge about farm accountancy in order to handle the farm business efficiently. The farm accounting or accountancy is also called "Farm Book keeping". Farm record keeping is a part of farm business analysis. It is defined as:
+
+- Farm accountancy is defined as the art as well as the science of recording in books business transactions in regular and systematic manner so that their nature, extent and financial effects can be readily ascertained at any time of the year.
+- Farm accounting is an application of the accounting principles to the business of farming.
+- Farm book keeping is known as a system of records written to furnish a history of the business transactions, with special reference to its financial side.
+- The Farm Accountancy or Farm Book Keeping is a matter of Farm Business Analysis.
+
+Accurate and up-to-date records are essential to successful farm management. Before any financial analysis, budgeting, or financial decisions can be made, farm records must be maintained. Managers usually keep farm records for three reasons:
+
+- Legal requirements - such as income tax purposes.
+- Obtaining credit - such as filling out loan applications.
+- Management tool - such as planning and budgeting.
+
+Most farmers do keep records but primarily for the first two reasons stated above, and not as a management tool. Records should also be used to: 
+
+- Evaluate past performance of the operation,
+- Provide a financial picture of the present situation, and
+- Serve as a planning guide for future decisions.
+
+More specifically:
+
+- Compare past records to the present and look for progress in the business.
+- Areas where costs have risen and consider how they could be lowered.
+- Compare volume of product and cost of production.
+- Look at level of debt repayment.
+- Is financing required?
+- What is your most cost efficient crop?
+- Where have problems occurred in the past and where will they likely occur in the future?
+
+### Financial records
+
+A record keeping system should go beyond the basic listing of income and expenses. The major financial accounting statements aim to provide a picture of the financial position and performance of a business. A business's accounting system will normally produce three particular statements on a regular, recurring basis.
+
+- The \textbf{cash flow statement} \newline A statement that provides either a monthly or quarterly listing of all inflow and outflow (cash in, and cash out) of money from a business. It shows possible shortfalls in cash and thus allows for corrective measures. Unfortunately, this is usually the most neglected management tool.
+
+- The \textbf{income and expense statement} \newline This statement provides a picture of profitability of the farm. How much wealth (that is, profit) was generated, or lost, by the business over that period? (Profit (loss) is defined as the increase (decrease) in wealth arising from trading activities.) \newline This is more accurately done using an accrual statement, which further accounts for inventory, accounts payable, and receivables, as well as depreciation expense.
+
+- The \textbf{balance sheet or net worth statement} \newline This is a listing of all assets and liabilities of a farm at certain point of time. This reports the financial strength and progress of the business.
+		
+
+#### Net worth statement/Balance sheet/Statement of financial position
+
+It reveals the forms in which the wealth of the business is held and how much wealth is held in each form. We can, however, be more specific about the nature of the balance sheet by saying that it sets out the assets of the business on the one hand, and the claims against the business on the other.
+
+Summary of the financial balances of an individual or organization. A balance sheet is often described as a "**snapshot** of a company's financial condition". Of the three basic financial statements, the balance sheet is the only statement which applies to a single point in time of a business' calendar year. Assets, liabilities and ownership equity are listed as of a specific date, such as the end of its financial year. 
+
+The financial institutes might ask for the net worth statement before considering loan application. The amount entered for calculating the assets valuation should include the exact value that would be earned on selling the asset in the market.
+
+**Assets**
+
+An asset is essentially a resource held by the business. The characterstics of an asset are: 
+
+1. A probable future benefit must exist.
+2. The business must have an exclusive right to control the benefit.
+3. The benefit must arise from some past transaction or event.
+4. The asset must be capable of measurement in monetary terms.
+
+The assets could include the cash, investments, etc. Assets can be further sub-divided into:
+
+- Cash & Bank Accounts: details of cash in hand, cheque accounts, savings account, money market funds, cash value of life insurance, etc.
+- Investments (Market value): details of certificates of deposit, stocks, bonds, mutual funds, annuities, pension plans, etc.
+- Personal Property (Present value): details of automobiles, home furnishing, appliance, furniture, collections, jewellery, etc
+
+**Liabilities**
+
+Liabilities represent the claims of all other individuals and organisations, apart from the owner(s). Liabilities must have arisen from past transactions or events such as supplying goods or lending money to the business. When a liability is settled it will normally be through an outflow of assets (usually cash). The liabilities could include loans, debts, etc. Liabilities can be further sub-divided into:
+
+- Current Debts: stores record of debts like household, medical, credit card, bank taxes, legal, etc.
+- Mortgage: details of any kind of mortgage debts like home, land, etc.
+- Loans: value of debts like bank loans, automobile loan, education loan, life insurance loan, personal loan, etc.
+
+**Owner's equity**
+
+When a business wishes to acquire assets, It may raise the funds from the owner(s) or from other outside parties (recorded as liabilities) or from both. The owner's equity represents the claim of the owner(s) against the business. Some find it hard to understand how the owner can have a claim against the business, particularly when we consider the example of a sole-proprietor-type business where the owner is, in effect, the business. However, for accounting purposes, a clear distinction is made between the business (whatever its size) and the owner(s). It is seen as a separate entity with its own separate existence and when financial statements are prepared, they relate to the business rather than to the owner(s). Viewed from this perspective, any funds contributed by the owner will be seen as coming from outside the business and will appear as a claim against the business in its balance sheet.
+
+**Example Net Worth Statement**
+
+Net worth or equity or net assets or capital of a company/farm is calculated by calculating the difference between the Total Assets and the Total Liabilities. Looking at the equation in this way shows how assets were financed: either by borrowing money (liability) or by using the owner's money (owner's or shareholders' equity). A business operating entirely in cash can measure its profits by withdrawing the entire bank balance at the end of the period, plus any cash in hand. However, many businesses are not paid immediately; they build up inventories of goods and they acquire buildings and equipment. In other words: businesses have assets and so they cannot, even if they want to, immediately turn these into cash at the end of each period. Often, these businesses owe money to suppliers and to tax authorities, and the proprietors do not withdraw all their original capital and profits at the end of each period. In other words, businesses also have liabilities.
+
+An example Net worth statement of MudnBrick Commercial Vegetable and Livestock Farm is presented in Table \@ref(tab:net-worth-state).
+
+```{r net-worth-state, echo=FALSE}
+net_worth <- readxl::read_xlsx("E:/DD/Teaching_s/Economics/Concepts_of_economics/data/concepts_of_economics.xlsx", sheet = "net_worth_state", col_names = FALSE)
+
+net_worth[-c(1,2,3,4),] %>% 
+  knitr::kable(format = "latex",
+             caption = "Net worth statement",
+             col.names = c("", "", "", ""), booktabs = TRUE) %>% 
+  kableExtra::kable_styling(position = "center", full_width = FALSE, latex_options = c("striped", "HOLD_position")) %>% 
+  kableExtra::add_header_above(c("Net Worth Statement" = 4), bold = T) %>%
+  kableExtra::add_header_above(c("Financial condition as of 2011-11-11" = 4), italic = T) %>%
+  kableExtra::add_header_above(c("MudnBrick Commercial Vegetable and Livestock Farm" = 4), bold = T) %>%
+  kableExtra::row_spec(row = c(1,2,8,9,15,16,21,23,24), bold = TRUE, align = "c")
+```
+
+
+#### Farm income statement/Profit and loss account
+
+**Cost-return analysis**
+
+An economic analysis of cost and returns, is an indicator of profitability in farming activity. However, a general descriptive analysis of costs and returns, is no substitute for a vigorous production function analysis, which serves well as an indicator of the efficiency of factors involved in production. The first and foremost step in financial cost-return analysis is the preparation of Income statement.
+
+It is not usually enough for users of the financial statements to have information relating only to the amount of wealth held by a business at one moment in time. It is the profit generated during a period that is the main concern of many users of financial statements.
+
+The purpose of the income statement -- or profit and loss account -- is to measure and report how much profit (wealth) the business has generated over a period. As with the balance sheet that we examined in previous section, the principles of preparation are the same. 
+
+The measurement of profit requires that the total revenue of the business, generated during a particular period, be identified. **Revenue** is simply a measure of the inflow of economic benefits arising from the ordinary activities of a business. These benefits, which accrue to the owners, will result in either an increase in assets (such as cash or amounts owed to the business by its customers) or a decrease in liabilities. Some examples of the different forms that revenue can take are as follows:
+
+- sales of goods/crops (for example, of a producer)
+- fees for services (for example, of a packaging)
+- subscriptions (for example, of a cooperative)
+- interest received (for example, of an investment fund).
+
+The total expenses relating to each period must also be identified. **Expense** represents the outflow of economic benefits arising from the ordinary activities of a business. This loss of benefits will result in either a decrease in assets (such as cash) or an increase in liabilities (such as amounts owed to suppliers). Expenses are incurred in the process of generating revenue, or attempting to generate it. Examples of some of the more common types of expenses are:
+
+- the cost of buying goods that are subsequently sold - known as cost of sales or cost of goods sold
+- salaries and wages
+- rent and rates
+- farm machinery and vehicle running expenses
+- insurances
+- printing and stationery
+- energy expenses (heat and light)
+- telephone and postage.
+
+The income statement simply shows the total revenue generated during a particular period and deducts from this the total expenses incurred in generating that revenue. The difference between the total revenue and total expenses will represent either profit (if revenue exceeds expenses) or loss (if expenses exceed revenue). The period over which profit or loss is normally measured is usually known as the "accounting period", or "financial period".
+
+The income statement links the balance sheets at the beginning and the end of an accounting period.
+
+An example income statement sheet of a small farmer undertaking vegetable cultivation is shown in Table \@ref(tab:cost-return-an).
+
+```{r cost-return-an, echo=FALSE}
+inc_state <- readxl::read_xlsx("./../data/concepts_of_economics.xlsx", sheet = "cost_ret_analysis4", skip = 3, col_names = T)
+
+inc_state %>% 
+  mutate_at(.vars = vars(contains("amount")), function(x) kableExtra::cell_spec(x, "latex", bold = T, color = kableExtra::spec_color(x, end = 0.9))) %>% 
+  knitr::kable(format = "latex",
+             caption = "Income statement",
+             booktabs = TRUE, escape = FALSE,
+             col.names = c("", "Particulars", "Amount (Rs./../ropani/annum)")) %>% 
+  kableExtra::kable_styling(position = "left", full_width = FALSE, 
+                            latex_options = c("striped", "HOLD_position")) %>% # changed full width
+  # for rowspec columns with na will be formatted first
+  kableExtra::row_spec(row = which(is.na(inc_state[,1])), bold = TRUE, align = "c") %>%
+  kableExtra::row_spec(row = 0, italic = TRUE, bold = TRUE) %>%
+  kableExtra::add_header_above(c("Income statement" = 3), bold = T)
+```
+
+
+### Production record-keeping
+
+Beyond financial record keeping is production record keeping. The less accurate your production records, the less accurate your financial projections will be. Some of the production records include:
+
+- Farm and field maps (each field, plot or bed numbered and area shown).
+- Livestock breeding, feeding, culling, and husbandry records.
+- Field history sheets (listing crops grown, soil amendment and/or pest or disease control inputs used now and before).
+- Input purchase records (including pesticide or fertilizer labels, seed packets and copies of orders showing product name and supplier, etc.).
+- Farm activity logs (planting; fertilizer or pesticide application; soil management practices ; scouting of plant health or disease problems; pest monitoring; harvest; storage, equipment settings; weather conditions , etc. ). The activity logs should show what product(s) are used, the location (field, plot or bed number), date and rate/quantity of application/settings ,etc.
+- Sales records (kind and quantity of products marketed - invoices should contain date, name of buyer, products, lot number, amount and price sold) . 
+
+## Farm power
+
+A farm power for various agricultural operations can be broadly classified as: Tractive work and Stationary power. These operations are done by different sources of power, namely human, animal, oil engine, tractor, power tiller, electricity and renewable energy (biogas, solar and wind).
+
+Human beings are the main source of power for operating small tools and implements. They are also employed for doing stationary work like threshing, winnowing, chaff cutting and lifting irrigation Water. In crop production system, labour peaks develop due to high labour demands in operations, which cannot be or have not been mechanized so far. For example, the operations like transplanting of paddy, weeding and inter-culture operations or harvesting of crops demand large number of human labour on each of the farms.
+
+Animals provide for major source of power on farms all over Nepal, especially in Hilly regions. Major sources of animal power are cattle, donkey, mules, elephant, camel, etc. The average force a bullock can exert is nearly equal to one tenth of its body weight. Generally a medium size bullock can develop between 0.50 to 0.75 hp.
+
+The third important source of farm power is mechanical power that is available through tractors and oil engines. The oil engine is a highly efficient device for converting fuel into useful work. The efficiency of diesel engine varies between 32 and 38 per cent, whereas that of the carburettor engine is in the range of 25 and 32 per cent. In recent years, diesel engines and tractors have gained considerable popularity in agricultural operations. Small pumping sets within 3 to 10 hp range are very much in demand.
+
+Now-a-days electricity has become a important as well as popular source of power on farms in various states of the country. It is steadily becoming more and more available with the increase of hydroelectricity generation through establishing Hydropower projects.
+
+Some differences between the mechanical and animal power is summarized in the Table \@ref(tab:mechanical-vs-animal).
+
+```{r mechanical-vs-animal, echo=FALSE}
+readxl::read_xlsx("./../data/concepts_of_economics.xlsx", sheet = "farm_power") %>% 
+  knitr::kable(format = "latex", 
+             caption = "Distinction between mechanical and animal farm power",
+             col.names = c("", "Basis", "Tractor/Power tiller", "Animal"), booktabs = TRUE) %>% 
+  kableExtra::kable_styling(position = "left", full_width = TRUE, 
+                            latex_options = c("striped", "HOLD_position")) %>% 
+  kableExtra::row_spec(0, bold = TRUE) %>% 
+  kableExtra::column_spec(c(3,4), width = "18em") %>% 
+  kableExtra::column_spec(1, width = "4em") %>% 
+  kableExtra::landscape()
+```
+
+
+# (PART) Agricultural marketing {-}
+
+## Meaning and definition of marketing
+
+In general, the activity of buying and selling of goods or services is called marketing. Only in the most conservative sense, marketing would be considered selling.
+
+\textbf{Old concept of Marketing}: \newline According to this concept, the function of marketing starts only after the production of goods and it automatically ends when they are sold out. The old concept maintains that the main objective of marketing is to supply goods or services from the producer to the consumers and earn a profit by selling them. For this, advertisement and different sales promotion techniques are used.
+    
+> _"Marketing comprises both buying and selling activities."_ --- Prof. Pyle
+
+> _"Marketing is the performance of business activities that direct the flow of goods and services from the producer to consumers or users."_ --- American Marketing Association, 1960
+
+Older concepts are product oriented, which put emphasis on the sale rather than needs, interests and wants of the customers.
+    
+\textbf{Modern concept}: \newline This concept focuses on consumer's need, and relies on the concept of market as a platform for matching production and consumption. Introduces the concept of consumerism.
+    
+> _"Marketing is the business process by which products are matched with markets and through which transfers of ownership are effected."_ --- Cundiff and Still
+
+> _"Marketing is the process of planning and executing the conception, pricing, promotion and distribution of ideas, goods and services to create exchanges satisfying individuals and organizational objectives."_ --- American Marketing Association, Modified definition
+
+> _"Marketing is the performance of activities which seek to accomplish an organization's objectives by anticipating customer or client needs and directing a flow of need-satisfying goods and services from the producer to customers of clients."_ --- Jerome McCarthy and William D. Perreault
+
+Marketing starts with generation of ideas and does not end untill the customers are satisfied. It applies to all profit and non-profit making organizations. This introduces the integrated approach to marketing rather than only selling and promotion approach. The features are:
+
+  1. Consumer satisfaction
+  2. Integrated process
+  3. Marketing as a social system and activity
+  4. Systems approach
+  5. Marketing information system
+  6. Social responsibility
+
+**Core marketing concepts**
+\newline 1. Peoples\newline - Needs: The starting point\newline - Wants: The desire to fulfill the needs\newline - Demands: Human needs which are supported by their buying capacity and willingness
+\newline 2. Products\newline Goods, Services and Ideas
+\newline 3. Exchange and transaction
+\newline 4. Relationship and network
+\newline 5. Markets
+
+**Evolution of marketing**
+
+  - Self sufficient economy
+  - Primitive barter economy
+  - Local market economy
+  - Money economy
+  - Town economy
+  - International economy
+
+There are five popular concepts of marketing. They are summarised in Table \@ref(tab:marketing-fives).
+
+```{r marketing-fives, results="asis"}
+readxl::read_xlsx("./../data/concepts_of_economics.xlsx", sheet = "marketing_fives", skip = 1) %>% 
+  knitr::kable(format = "latex", booktabs = TRUE, caption = "Different concepts of marketing") %>% 
+  kableExtra::kable_styling(latex_options = c("HOLD_position"), full_width = FALSE) %>% 
+  kableExtra::row_spec(row = 0, bold = TRUE) %>% 
+  kableExtra::column_spec(1, width = "3.2cm") %>% 
+  kableExtra::column_spec(2:4, width = "3.6cm")
+```
+
+
+## Importance of marketing
+
+The importances of marketing is summarized in Table \@ref(tab:marketing-importance).
+
+```{r marketing-importance, results="asis"}
+
+imp_marketing <- list("Consumers" = c("Customer satisfaction", "Selection facility", "Product information", "Standard of living"), 
+          "Firm" = c("Revenue earning", "Information", "Mass distribution", "Goodwill"), 
+          "Society" = c("Employment", "Poverty eradication", "Standard of living", "Creation of utilities", "Utilization of resources"))
+
+imp_marketing %>% 
+  enframe() %>%
+  mutate(value = map_chr(value, ~paste(.x, collapse = ", "))) %>% 
+  knitr::kable(col.names = c("Importance to","Importances"), format = "latex", booktabs = TRUE, caption = "Importance of marketing") %>% 
+  kableExtra::kable_styling(latex_options = c("HOLD_position"), full_width = FALSE) %>% 
+  kableExtra::row_spec(row = 0, bold = TRUE) %>% 
+  kableExtra::column_spec(2, width = "10cm") %>% 
+  kableExtra::column_spec(1, width = "4cm")
+```
+
+
+## Marketing mix and its components
+
+Several different activities should be performed to meet the marketing objectives. Hence the combination of all the activities conducted to satisfy the needs of a target market is called marketing mix. The activities in clude: Research, identification of customers' needs, and production of the goods or services accordingly and satisfying the customers through sales and distribution are included under marketing mix. Marketing activities should be coordinated in such a way that the needs of target markets are completely satisfied. So, the coordination and well management of entire marketing activities is marketing mix.
+
+> _"Marketing mix is the controllable variables which the company puts together to satisfy its target market."_ --- Jerome McCarthy and William Perrault
+
+> _"Marketing mix is the set of marketing tools that the firm uses to pursue its marketing objectives in the target market."_ --- Phillip Kotler
+
+The combination of the major four components such as products, price structure, distribution system and promotional activities to be included in the marketing programs of a firm is "marketing mix".
+
+The fulfillment of customers' needs and wants should be considered while making marketing mix decision. Since all the four components are interrelated, decision regarding either one of these also affects others. Marketing mix represents a dynamic condition of marketing activities of the firm. The marketing mix changes accordingly with the changes in customers needs and wants.
+
+At first Prof. Neil H. Borden of Harvard Business School used the term "Marketing Mix". However, Prof. Jerome McCarthy of Michigan state university presented "Marketing Mix" as four "Ps" in his book basic marketing published in 1960. He included Product, Place, Price and Promotion under these four "Ps".
+
+## Components of marketing
+
+There are four prime components of marketing. Each is summarized with its constituents in the Table \@ref(tab:component-marketing) 
+
+```{r component-marketing, results="asis"}
+readxl::read_xlsx("./../data/concepts_of_economics.xlsx", sheet = "comps_m_mix") %>% 
+  knitr::kable(format = "latex", booktabs = TRUE, caption = "Components of marketing") %>% 
+  kableExtra::kable_styling(latex_options = c("HOLD_position"), full_width = FALSE) %>% 
+  kableExtra::row_spec(row = 0, bold = TRUE) %>% 
+  kableExtra::column_spec(1:4, width = "3.95cm")
+```
+
+
+1. Product mix
+\newline Product means goods, materials, services and even ideas. The term is inclusive of quality, price, brand, color, packaging, seller's services, goodwill, reputation, guarantee, and warranty of goods besides physical goods themselves with which the customers can get satisfaction. Broadly, it includes:
+
+  - Product planning and development
+  - Standardizing and grading
+  - Branding and packaging
+
+2. Place mix
+\newline Also called distribution mix, it consists of two sub-components -- selection of a distribution channel and physical distribution of products.
+
+  - Selection of distribution channel; The means or medium used to carry products to the ultimate consumers is called distribution channel. The business firm, which can select a proper channel to deliver right good to the right customer at right time can get success. The selection of channel is affected by nature of product, distribution cost, financial position of the firm, market situation, market competition, etc.
+  - Physical distribution; includes management of necessary means of tranportation, warehouse for storing, inventory control, material handling, order processing, place analysis etc. This creates place utility and time utility of products.
+  
+3. Promotion mix
+\newline Includes the activites such as personal selling, advertising, sales promotion, publicity and public relations. Besides these, proper installation, repair, supply of parts, stability in quality and post-sales customer services are also included in it.
+
+4. Price mix
+\newline This is very sensitive component of marketing mix. Decisions on selling price, commission rate, etc. are taken into account. While taking decisions on price, reasonable return on the investment of the firm and customers' services should be considered.
+
+Besides above mentioned four components, service oriented firms should also integrate the following components to the marketing mix (suggested by Booms and Binter).
+
+5. Process mix
+6. People mix
+7. Physical evidence mix
+
+The importance of marketing mix can be summarized in the points below.
+
+  - Meeting consumer's needs
+  - Integrated approach to marketing
+  - Environmental consideration
+  - Providing employment opportunities
+  - Increasing education to consumers
+  - Raising standard of living
+  - Increase in national income
+
+## Agricultural marketing
+
+Simply, the activity of buying and selling of agricultural inputs and products is called agricultural marketing. The market where the activities of buying and selling of fertilizers, seeds, pesticides, agricultural tools, etc. that are necessary for agricultural production and development occurs is called agriculture inputs and tools market. The activities of buying and selling of food grains, cash crops, vegetables, dairy products, fishery, and horticultural products are some sub-sectors of agricultural marketing. Distinctively, agricultural markets are:
+
+1. Agro-inputs and tools market
+  - Fertilizer
+  - Seeds
+  - Pesticides
+  - Agro-tools
+  - Other inputs
+
+2. Agro-product market
+  - Food grains
+  - Cash crops
+  - Vegetables
+  - Fruits
+  - Dairy products
+  - Meat/fish
+  - Other products
+
+Alike other markets, mutual interaction between the buyer and seller is necessary in the agricultural market. Agricultural market is simply not possible without active role of farmer. But, uniquely, the role of farmers is both as buyers and as sellers in the agricultural market. The farmers become buyers of agricultural inputs and tools and they become sellers in the market of agro-products.
+
+### Typical structure of agriculture marketing in Nepal
+
+Farmers $\LARGE{\Rightarrow}$ (Local market $\LARGE{\Rightarrow}$ Primary market $\LARGE{\Rightarrow}$ Central market) $\LARGE{\Rightarrow}$ Retail market $\LARGE{\Rightarrow}$ Consumers
+
+Agricultural market has a special role in Nepalese economy; more than $2/3^{rd}$ of population is involved in agricultural operations. Agricultural commodities also form a major fraction of the total exports. Similarly, raw materials essential to production of industrial goods are also supplied by agriculture and forest sectors. So, Nepalese manufacturing sector is also linked to agriculture sector in some ways.
+
+### Classification of markets
+
+1. On the basis of location
+  - Village markets
+  - Primary wholesale markets
+  - Secondary wholesale markets
+  - Terminal markets
+
+2. On the basis of area/coverage
+  - Local or village markets
+  - Regional markets
+  - National markets
+  - World/international markets
+  
+3. On the basis of time span
+  - Short-period markets
+  - Long period markets
+  - Secular/permanent markets
+  
+4. On the basis of volume of transaction
+  - Wholesale markets
+  - Retail markets
+
+5. On the basis of nature of transactions
+  - Spot or cash markets
+  - Forward markets
+
+6. On the basis of number of commodities in which transaction takes place
+  - General markets
+  - Specialized markets
+
+7. On the basis of degree of competition
+  - Perfect markets
+  - Imperfect markets: monopoly, duopoly, oligopoly, monopolistic competition
+  
+8. On the basis of nature of commodities
+  - Commodity markets
+  - Capital markets
+  
+9. On the basis of stage of marketing
+  - Producing markets
+  - Consuming markets
+
+10. On the basis of type of population served
+  - Urban markets
+  - Rural markets
+  
+11. On the basis of extent of public/government intervention
+  - Regulated markets
+  - Unregulated markets
+
+
+### Characteristics/Features of agricultural goods
+
+1. Production related
+  - Seasonal production
+  - Scattered production
+  - Small scale production
+
+2. Marketing related
+  - Perishable products
+  - Bulky products
+  - Quality and quantity variation
+  - Presence of intermediaries
+  
+3. Consumption related
+  - Continuous consumption
+  - Inelastic demand
+  - Price fluctuations
+  - Elastic supply
+
+### Prospects of agricultural marketing in Nepal
+
+The prospects of agricultural marketing in Nepal can be described as follows:
+
+1. Increased demand for agro-products
+\newline There is increasing demand for agricultural products like paddy, wheat, vegetable, fruits, milk, meat, etc. The population growth rate is high, i.e., ~ 2%. The growth in population stimulates the higher demand for food products.
+    
+2. Export possibility
+\newline Nepal, as a biodiversity rich country, has great possibility of improving export of unique agro-products like fresh fruits, tea, coffee, and other high value products.
+
+3. Improvement in infrastructure
+\newline Infrastructures like transportation and warehousing facilities in Nepal are gaining development. These facilities promote the movement and storage of agricultural products throughout the country.
+
+4. Government policy
+\newline The government of Nepal has prioritized development and promotion of agricultural commodities. Many faciliites and incentives are provided to the farmers for increasing agricultural production.
+
+5. Insitutional arrangement
+\newline Institutions like Agriculture Development Bank Ltd. (ADBL), National Cooperative Bank Ltd., Nepal Agriculture Research Council (NARC), National Cooperative Development Board (NCDB), IAAS, AFU, agricultural cooperatives and agricultural offices provide essential services to the farmers.
+
+### Problems of agricultural marketing in Nepal
+
+1. Lack of organized market
+2. Predominance of intermediaries; market affected by exploitative approaches of intermediaries
+3. Lack of standardization and grading
+4. Lack of warehousing
+5. Lack of transportation facility
+6. Lack of marketing skills
+7. Lack of effective peasants' organization
+8. Lack of market information system
+9. Lack of minimum support price system
+10. Lack of effective pricing policy
+11. Unauthorized deductions and multiplicity of charges: allowances are claimed on account of moisture, dust, husk, etc.
+
+## Marketing functions 
+
+"Marketing function" may be defined as a major specialised activity performed in accomplishing the market process. Modern marketing system has several functions. Its important function is to move the desired varieties of farm products to consumers in the desired forms and conditions at the lowest possible cost. There are three principal marketing functions: 
+
+1. Assembling (procurement, concentration)
+
+In agriculture, goods are mostly produced by small farmers scattered over a wide area. Collection of small supplies from them, before further processes of marketing, is undertaken, is necessary. **Assembling**, therefore, means bringing together, collecting and concentrating goods of the same type from the various sources of supply at centrally located places. Agricultural goods are assembled chiefly for two purposes; first, for meeting the demand of consumers, and secondly, to provide a sufficient volume of business to middlemen like wholesalers and retailers. The importance of assembling as a means of facilitating the orderly feeding of markets is fairly obvious in a country like Nepal where these markets are far away from the multitude of small producers responsible for supplying them.
+
+2. Processing (preparation for consumption)
+
+We find very few agricultural products which are ready for final consumption when they leave the farm. In most cases, the marketing system must convert them into a suitable form before they can be sold to consumers. Further, excess farm production sometimes poses a serious problem of surplus over the existing demand in the coming years. Processing helps to create a new demand and maintain the quality of the product for a longer period. **Processing**, therefore, may be defined as the act or series of acts by which a product is converted into a more usable form. 
+
+The processing function would include all of those essentially manufacturing activities that change the basic form of the product, such as converting live animals into meat, fresh peas into canned or frozen peas or wheat into flour and finally into bread. To what extent processing can be regarded as a part of marketing is a debatable question. It is often not included in the list of marketing functions since it is essentially a form changing activity. But in order to provide consumers with the kind of food and clothing, when and where wanted during the year and to stabilise the market for farmers, processing is necessary. The function of processing which should have been carried out by the farmers themselves has been nowadays increasing delegated to non-farming specialists.
+
+3. Dispersion (distribution)
+
+Dispersion is a process exactly the opposite to that of assembling. After collecting the products of many farmers in scattered localities and processing the same, the process of dispersion begins. This is dispersion of these products to many thousand of consuming markets and into the hands of million of consumers. Dispersion function involves finding where potential buyers are located, how much and what products they prefer, and what price they are ready to offer. It also includes selling of the goods, their physical movement and handling and the transfer of funds back to central and assembly markets. "**Dispersion** means keeping a steady flow into consumption of the vast volume of goods which is flowing into the central markets through the assembly end of the marketing system."
+
+In carrying out each of the three major functions of marketing certain other functions are performed which are termed as "secondary services". They include: 
+
+- Standardisation and Grading
+\newline Standardisation and grading imply the setting up of the basic standards to which the produced goods must conform. A standard specifies what basic qualities a product must have to be designated consistent with established characteristics. Standards are set with regard to the shape, size, colour, quality and performance, etc. The standardisation of products would, therefore, mean that the goods produced would ensure the same specifications as prescribed. Standardisation, therefore, carries the idea of uniformity of quality. In its general sense, **standardisation** "includes the establishment of standards, the sorting and grading of products to conform to these standards. \par 
+The function of standardisation relates mainly to manufacturing products or can be applicable to agricultural processed goods. It is not possible for the farmer to conform to the same size, quality, colour, etc. In agricultural marketing, grading acts in complement to standardisation. Grading is the act of separating or inspecting agricultural goods according to established specifications. **Grading** refers to the application of basic descriptive standards such as size, colour or appearance to agricultural products where the farmer has limited control over their products' physical specifications. For example, a fruit grower will command a lower price for a mixed lot of ungraded apples than the same lot after it has been graded into lots of equal size and appearance and priced accordingly. The purpose of grading is to establish a common language understood by buyers and sellers as a basis for judging the quality of a product in relation to its sale price. \par
+Grading is also necessary to cater to the special tastes and preferences of different sections of buyers. Quality of a product and its utility are subjective. What standardisation can do is to offer uniform lots for sale in the market and to afford an opportunity to the buyers to purchase from the lot they like the best.
+
+- Packaging 
+\newline Packaging is a process of putting the commodities into convenient containers or wrappers. Most of the products must be put into containers or packages to prevent spoilage and waste and to facilitate their movement from the farms into possession of final consumers. Packaging contributes to more efficient marketing by
+1. reducing bulk
+2. facilitating handling
+3. reducing shrinkage and spoilage
+4. facilitating quality identification and product selection by consumers
+5. assisting in advertising and better merchandising
+6. helping to reduce other marketing costs by facilitating self-service retailing and modern handling methods through the marketing system. \par
+In the face of widening agricultural markets, the packaging of agricultural products has assumed greater importance. Apples of jumla have a wide market and if not packed properly, run the risk of spoilage before reaching the final consumer. Equally important are the changing perceptions of consumers and to satisfy them, packaging and constant improvements in it assume greater significance.
+
+- Transporting
+\newline Transportation is one of the most important functions of the modern marketing system. This function is primarily concerned with making goods available at the proper place resulting in the creation of place utility of agricultural commodities. In order to maximise the returns from an agricultural pursuit, it is not only the place utility but time utility as well that shall have to be kept in view. While it is always desirable to transport an agricultural commodity as far away as possible to a more remunerative market, it is equally important to reach these products to the consumers at the proper time. In both the cases, transport plays a crucial role. An efficient transport system enables to reach the markets far and wide and also without losing any precious time. In order, therefore, to ensure adequate returns to the producer, the transport system must be developed rapidly.
+
+- Storage
+\newline In respect of agricultural products, production is seasonal while consumption is throughout the year. Hence, storage of goods is imperative so that they can be protected from deterioration and their supply is ensured continuously. Storage, in fact, creates time utility. It implies storing of farm products in a warehouse or in a cold storage plant, depending upon the nature of the product. \par
+Farm products are stored to make them available the year round, to build stocks during periods of plenty and release during periods of scarcity, as agriculture is characterised by relatively large and irregular seasonal and year-to-year fluctuations in production. Hence there can be two important reasons for holding agricultural products in storage. One is to even out the seasonal factor in production or in sales; the second, some agricultural products get improved in their quality as well as value when stored for a long time. For example, products such as whisky must be conditioned to improve their flavour and thereby to increase their value. Bananas are plucked when raw and stored near the market site till these enter the final market. This facilitates their transportation to distant places. Several other fruits and agricultural products are handled in the same way in order to minimise the risk of loss.
+
+- Financing
+\newline The financing function of marketing involves the use of capital to meet the financial requirements of the agencies engaged in various marketing activities. Farm products are not sold immediately after they are grown. It takes time for goods to reach the hands of the ultimate consumers. Thus, there is a long interval between the time when the farm products are ready for sale and the time when these goods reach the hands of the user. \par
+To the extent that there is a delay between the time of the first sale of raw products and the sale of finished goods to the ultimate consumer, capital remains tied up in operation. "The service of providing the credit and money needed to meet the cost of selling merchandise into the hands of the final user is commonly referred to as the finance function in market."
+
+- Risk bearing
+\newline The risk-bearing function is the accepting of the possibility of loss in the marketing of a product. These risks can be classified into two broad categories: \newline 
+Physical risks: Those risks which occur from destruction of the product itself by fire, accident, earthquakes, cold and heat, etc. Risk attached to such natural hazards can often be transferred to institutions that specialise in assuming such risks. Insurance companies cover such risks in return for premium payments. \newline
+Market risks: Those risks which occur due to the changes taking place in product prices. Risks of changes in market demand are reduced through accurate sales forecasting and market research. Such risks can also be reduced through aggressive programme of advertisement, personal selling and the like. \par
+Market research, in particular, is assuming considerable importance these days. Sales forecasts are made by specialised agencies and instructions are issued to the concerned parties accordingly. Market intelligence is also helpful in minimising the agricultural market risks. As the risk component is controlled, the marketing of agricultural products will become more efficient.
+
+- Selling
+\newline Selling or making persons to demand and agree to make payment for what a given seller has for sale is the central step around which all other marketing services revolve. On that score, it may be considered as the nucleus of marketing. Selling includes transfer of title and collecting or receiving of payment. Selling in its broadest sense not only effects ownership transfer but also helps in identifying prospective customers, stimulating demand and providing information and services to buyers. In order to achieve these goals, the market must combine such activities as personal selling, advertisement, sales promotion, packaging and custom services.
+
+
+## Marketing margin
+
+In dealing with the price problems of marketing, it is important to distinguish between the consumer price, the price or margin which marketing agencies receive for the services they perform and the price received by the producer of farm products. Each of the marketing services as well as the job of buying and selling, adds to the cost of the farm product by the time it reaches the consumer. The difference between the amount consumers pay for the final product and the amount producers receive is generally referred to as "marketing bill" or the "marketing margin". This margin between farm prices and retail prices reflects the cost of marketing and it varies widely for different groups of products. 
+
+The study of marketing margin of agricultural products is very important to ascertain the producer's share in the consumer's expenditure and also to know the margins of various functionaries involved in the marketing process. It also helps us to know the different components of marketing margins and their influence on the final price which the consumer pays. Such a study for different commodities at different times helps us to know the variations in marketing margins. 
+
+This is essential for the formulation of an appropriate price policy for agricultural commodities. Marketing margin studies also assume importance because they help ensure reasonable returns to the producers and also make available the commodities to consumers at reasonable prices. Both from the point of view of the producer and consumer, such studies should help identity the areas where market charges can be minimised.
+
+While it is very difficult to measure exactly the cost of marketing, many official and non-official studies made in many countries have confirmed the contention that distribution costs are relatively higher in agriculture. It is often said that the farmer's share in the consumer's rupee is relatively small as compared to that of several intermediaries in the market channel. The merchants absorb an alarmingly large share of this price. Even in England, where agriculture has been fully commercialised and the farmer does not lack business capacity, "the spread between producers' and consumers' prices", according to the Linlithgrow Committee,"is unjustifiably wide. Taken as a whole, distributive costs are a far heavier burden than society will permanently consent to bear."
+
+Evidently, this is on account of inefficient marketing system which may arise out of two circumstances. Firstly, the high cost of marketing services and functions, system of transportation, wasteful methods of storage, careless handling of produce, large number of middlemen, etc. will certainly increase the cost of the products and deprive the producer of his due share in the consumer's rupee. Secondly, even if the marketing services are rendered most economically, the producer may be deprived of his due share on account of a defective market structure. Important reasons responsible for the high distribution cost of agricultural products may be listed as follows:
+
+1. Difficulty of assembling the small outputs of thousands of producers scattered all over the country;
+2. Greater incidence of transport costs, especially for bulky and low-priced products;
+3. Difficulties of grading due to the wide variations in type and quality of output both of livestock and of crop products;
+4. Impossibility of maintaining regular production and supply.
+5. Greater need for storing and processing to cope with season quality of production;
+6. Grater risk resulting from the need for storage and from the handling of highly perishable products; and
+7. Strict limits within which sale by contract or by sample is possible
+
+## Market structure
+In the case of agricultural industry, the farm products are produced by numerous small farmers and it may not be possible for each farmer to sell his produce to the potential consumer himself. The farmer producing on a small-scale has usually neither the time nor the ability to undertake directly the marketing of his produce. His produce is too small for him to undertake economically the direct marketing of his products to the final consumers. In most cases, the farmer's entire output is turned over to one or a small number of agent middlemen for marketing his produce. It is common for the bulk of commodities to change hands three or four times between the producer and the consumer. 
+
+Usually, farmers sell their produce to small merchants and travelling traders at the village level. This then is taken to the wholesale markets where it is again sold to retailers through which it reaches the final consumer. Farmers with bigger holdings may bypass the village merchant and sell directly in the major wholesale market. Certain commonly encountered and easily recognisable types of markets which generally exist between the farmer and the final consumer are:
+
+1. Local assembly and processing markets
+\newline Before the supply of any agricultural product can be equated to the demand and distributed to the competing buyers, the available supplies of the product will naturally have to be collected from the innumerable farmers who produce it. Most farm products pass through some small markets located close to the point of their production where produce is sold by the farmer to the local buyer who assembles the products of a number of farmers, and sends them to either the district or central market. These local markets, also known as growers' markets or primary markets, are located in small towns and at other convenient places where agricultural producers can bring their goods and sell to the prospective buyers.
+
+2. Processing markets
+\newline Some commodities are processed either wholly or in part at local markets where consumers purchase them directly from the farmers. But most of the commodities are processed at the large central markets. Between these two types of processing markets, in case of some products, we find markets where the produce from a considerable number of local assembly markets are assembled and processed for transporting to central markets or direct to consuming markets.
+
+3. Primary, terminal or central markets
+\newline There are large central markets where goods from many local assembly markets or district processing points are concentrated for processing or for additional processing, storage, grading, conditioning and distribution to other processing and secondary wholesale markets or to markets abroad. Central markets, thus, are the last step in the assembling or concentration and the first step in the dispersion process. The big wholesale markets can be compared to reservoirs into which flow the fluctuating and seasonal supplies from different producing areas, and from which is met a constantly fluctuating demand. It is in this market where price-making activities take place. \par
+It is in these markets where buyers and sellers representing regional, national or even international demand for the agricultural products are seen more clearly in the wholesale market than in producing areas. The adjustment of demand and supply may be said to take place in the central markets. As a matter of fact, a central or terminal market is the meeting point of the three marketing processes - concentration, equalisation and dispersion.
+
+4. Secondary processing markets
+
+5. Wholesale distribution markets
+\newline The agricultural goods which are assembled in the central market have to be dispatched to consumers through the retailers. Wholesalers operating in the central markets mostly prefer to deal in bulk which cannot be afforded by retailers. Therefore, separate wholesale markets specially for the dispersion of goods to retailers have been developed in between the large central markets and the retailers. These markets are often called "secondary wholesale markets" to distinguish them from primary or central wholesale markets. Another term sometimes applied to them is "jobbing markets". These markets operate on a smaller scale than the central markets. They do not play any major role in the determination of prices. They are concerned only with those operations which are essential to meet the needs of their retail clients.
+
+6. Retail markets
+\newline In retail markets, the goods are ultimately placed before the individual consumer for acceptance or rejection. Every retail store in the city, town and village which sells to the final consumers is a retail market. "Retailing is, perhaps, the most difficult part of the marketing process to perform, and certainly is the most expensive. For producers of consumers' goods, the retail store is the ultimate point of contact with the users of their products. Here in the retail store, the battle of the market is fought out to a final conclusion."
+
+## Marketing Channels
+
+Marketing channels are routes through which agricultural products move from producers to consumers. The length of the channel varies from commodity to commodity, depending on the quantity to be moved, the form of consumer demand and degree of regional specialization in production. A marketing channel may be defined in different ways.
+
+According to Moore et al. "The chain of intermediaries through whom the various food grains pass from producers to consumers constitutes their marketing channels". 
+
+**Factors affecting length of marketing channels**
+
+Marketing channels for agricultural products vary from product to product country to country, lot to lot and time to time.
+
+**Marketing channels of distribution**
+
+The course taken in the transfer of the title of a commodity constitutes its channel of distribution. Alternatively, It is the route taken by a product in its passage from its first owner i.e. producer to the last owner, the ultimate consumer.
+
+Important channels of distribution :
+
+Producer or manufacturer $\Longrightarrow$ Retailer $\Longrightarrow$ Consumer.
+
+Producer or manufacturer $\Longrightarrow$ Consumer.
+
+Producer or manufacturer $\Longrightarrow$ Wholesaler $\Longrightarrow$ Retailer $\Longrightarrow$ Consumer.
+
+Producer $\Longrightarrow$ Commission agent.
+
+Factors considered while choosing a Channel:
+
+1. Nature of the product.
+2. Price of the product.
+3. Number of units of sale.
+4. Characteristics of the user.
+5. Buyers and their buying units. \par
+  - Low priced articles with small units of sale are distributed through retailers.
+  - High price special items like radios, sewing machines etc are sold by manufacturers and their agents.
+  - Public services like gas, electricity and transport are usually sold directly to the consumer.
+
+## Cooperative marketing
+
+Various marketing functions, such as collection, storage, financing, insurance, grading, transporting and selling of agricultural produce are performed by a large number of persons who play the part of middlemen. Very often, there are more middlemen than are necessary and generally the charges are out of proportion to the services they render. The result is that the primary producer does not receive his due share of the price paid by the ultimate consumer. A bulk of price paid by the consumer is digested by these middlemen with the result that the consumer has to pay a higher price while the producer gets a lower return for the same. Cooperative marketing of agricultural produce assumes significance from the need to reduce the price spread between the producer and the consumer so as to ensure a better return to the primary producer without affecting the interests of the consumers. Cooperative marketing is the organised sale of farm products on a non-profit basis in the interests of the individual producer. Such cooperatives might start either from the producers' end where they may attempt to distribute their own products in the hope of obtaining higher returns, or from the consumers' end where they may take over distribution in order to buy cheaper. 
+
+It is well to stress that the real purpose of cooperative marketing is not to eliminate the middleman but to perform his services at a lower cost. 
+
+The primary objective of cooperative marketing is to reduce the marketing margin and thereby assure the farmer a better price for his produce and supply the goods to the consumer at a fair price. A cooperative marketing society may have the following objectives.
+
+1. To make arrangements for the sale of agricultural produce of members. (It may deal with non-members also but they will not get those benefits which are available to members.)
+2. To provide loan facilities to members on the security of agricultural produce.
+3. To give encouragement to members to grow the latest improved and standardised varieties of produce.
+4. To make arrangements of godown for the preservation of produce of members.
+5. To make arrangements for processing and cold storage activities for members.
+6. To encourage thrift, self-help and cooperation amongst members.
+7. To undertake those other activities which can further the objects of the marketing societies.
+
+**Advantages of cooperative marketing**
+
+1. Reduced cost and improved service
+2. Improved marketability of products
+3. Improved bargaining power
+4. Steadier supply to the wholesale market
+5. Controlling the flow to the market
+6. Development of markets
+7. Cheaper finance
+8. Training in business methods
+
+## Price variation
+
+The variation in price of the same common agricultural commodity can be distinguished as:
+
+1. Time/Temporal variation
+\newline Not every agricultural good can be produced at all times, this is due to the seasonal nature of a agricultural crop. Generally a production prompted during off-season fetches a good price, compared to that sold during when there is adequate quantity of field produce available for sale. This variation, due to time, is also most prominant during periods of festivals and occassions, when demand for certain food item is heightened by beliefs. For example, the price of dry fruits at or near Tihar festival is more than usual. The temporal variation in price is directly caused due to differing quantity of supply on one hand and differences in demand at certain periods of time on the other.
+
+2. Space/Spatial variation
+\newline Agricultural commodities are typically produced over an extensive spatial area and are costly to transport relative to their total value. The site where production occurs is very unlikely to also be the consumption hub. One major cause of spatial difference in price is due to differential suitability of a produce in a geographical region. A location where agroclimate favors a certain crop may not be as reliabe in production of a different crop considered appropriate for a different habitat. This necessitates that a good not originally occuring in a region be transported and/or processed to the location, obviously adding to the marketing function that have to be be performed.
+  
+## Differences between wholeselling and retailling
+
+```{r wholesale-retail, results="asis"}
+readxl::read_xlsx("./../data/concepts_of_economics.xlsx", sheet = "wholesale_retail", skip = 1) %>% 
+  knitr::kable(format = "latex", booktabs = TRUE, caption = "Difference between wholeselling and retailling") %>% 
+  kableExtra::kable_styling(latex_options = c("HOLD_position"), full_width = FALSE) %>% 
+  kableExtra::row_spec(row = 0, bold = TRUE) %>% 
+  kableExtra::column_spec(1, width = "3.5cm") %>% 
+  kableExtra::column_spec(2:3, width = "5.25cm")
+```
+
