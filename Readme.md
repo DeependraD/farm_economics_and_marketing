@@ -1,1 +1,1 @@
-"# Farm Management, Introductory Economics and Marketing" 
+# Farm Management, Introductory Economics and Marketing
